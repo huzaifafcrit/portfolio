@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top themeColor">
+    <a class="navbar-brand">
+        <a (click)="sidenav.toggle()" style="cursor: pointer;">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <a routerLink="huzaifaanjum" >
+            <span class="nameStyle">Huzaifa Anjum</span>
+        </a>
+    </a>
+    <button class="navbar-toggler" style="display: none;" type="button" data-toggle="collapse"
+        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end themeColor" id="navbarCollapse">
+        <ul class="navbar-nav" >
+            <li class="nav-item">
+                <a class="nav-link" (click)="scrollToView('about')">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="scrollToView('technicalSkills')">Technical Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="scrollToView('interests')">Interests</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" (click)="scrollToView('blogs')">Blogs</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" (click)="scrollToView('contact')">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div style="float: right;">
+        <a style="display: inline-block; cursor: pointer;" class="mt-1" mat-icon-button
+            [matMenuTriggerFor]="menu">
+            <span class="material-icons">
+                more_vert
+            </span>
+        </a>
+        <mat-menu #menu="matMenu" class="mt-2">
+            <a mat-menu-item href="mailto:huzaifafcrit@gmail.com" style="text-decoration: none;">
+                <mat-icon class="mail">mail</mat-icon>
+                <span>Contact Me</span>
+            </a>
+            <!-- <a mat-menu-item style="text-decoration: none;" [routerLink]="['blogs']">
+                <mat-icon class="blogs">amp_stories</mat-icon>
+                <span>Blogs</span>
+            </a> -->
+            <a mat-menu-item href="tel:+91 8879539141" style="text-decoration: none;">
+                <mat-icon class="phone">local_phone</mat-icon>
+                <span>+91 88795 39141</span>
+            </a>
+            <a mat-menu-item routerLink="huzaifaanjum" style="text-decoration: none;">
+                <mat-icon class="code">code</mat-icon>
+                <span>Developer</span>
+            </a>
+            <a mat-menu-item *ngIf="!loggedIn" (click)="signIn()" style="text-decoration: none;">
+                <mat-icon class="user">account_circle</mat-icon>
+                <span>Log In</span>
+            </a>
+            <a mat-menu-item *ngIf="loggedIn" (click)="signOut()" style="text-decoration: none;">
+                <mat-icon class="user">account_circle</mat-icon>
+                <span>Logout</span>
+            </a>
+        </mat-menu>
+    </div>
+</nav>
+<div class="p-4"></div>

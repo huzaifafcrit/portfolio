@@ -1,0 +1,128 @@
+.nameStyle {
+    cursor: pointer; 
+    margin-left: 10px;
+    color: white;
+}
+
+.navbar-light {
+    background-color: white;
+}
+
+.navbar-light .nav-item > .nav-link {
+    color: rgba(0,0,0, 0.7);
+    cursor: pointer;
+}
+
+.back-arrow {
+    padding: 5%;
+    font-size: medium;
+    float: right;    
+}
+
+.sideBar {
+    width: 20%;
+    position: fixed;
+}
+
+.setPadding {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.mail{
+    color: #c71610;
+}
+
+.blogs{
+    color: forestgreen;
+}
+
+.phone{
+    color: royalblue;
+}
+
+.code {
+    color: #ff5722
+    ;
+}
+
+.user {
+    color: purple;
+}
+
+
+@media only screen and (max-width : 400px) {
+    
+    .setPadding {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .bk {
+        height: 500px;
+    }
+
+    .sideBar {
+        width: 75%;
+    }
+
+    .navbar-light {
+        background-color: #006cb6 !important;
+        color: white;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .setPadding {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .sideBar {
+        width: 75%;
+    }
+
+    .navbar-light {
+        background-color: #006cb6 !important;
+        color: white;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    .sideBar {
+        width: 40%;
+    }
+
+    .navbar-light {
+        background-color: #006cb6 !important;
+        color: white;
+    }
+
+    .navbar-light .nav-item, .navbar-light .nav-item .nav-link   {
+        color: white;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .sideBar {
+        width: 40%;
+    }
+
+    .navbar-light {
+        background-color: white !important;
+        color: rgba(0,0,0,0.7);
+    }
+
+    .navbar-light .nav-item, .navbar-light .nav-item .nav-link   {
+        color: rgba(0,0,0, 0.7);
+    }
+
+    .nameStyle {
+        color: rgba(0,0,0,0.7);
+    }
+
+}
