@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { USER_DATA } from 'src/assets/json/user-info';
 
 @Component({
   selector: 'app-areas-of-interest',
   templateUrl: './areas-of-interest.component.html',
   styleUrls: ['./areas-of-interest.component.css']
 })
-export class AreasOfInterestComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class AreasOfInterestComponent {
+  userInterests = USER_DATA.interests;
 }

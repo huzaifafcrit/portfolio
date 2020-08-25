@@ -1,0 +1,42 @@
+.social-icons-container {
+    padding-top: 10%;
+}
+
+.social-icons {
+    color: #848484;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    padding: 5%;
+    font-size: 23px;
+    outline: none;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+a {
+    outline: none;
+}
+
+.userName { 
+    color: white; 
+    font-size: 30px;
+}
+
+@media only screen and (max-width : 400px) {
+    
+    .userName {
+        font-size: 25px;
+    }
+}

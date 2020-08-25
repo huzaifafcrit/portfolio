@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top themeColor">
     <a class="navbar-brand">
-        <a (click)="sidenav.toggle()" style="cursor: pointer;">
+        <a (click)="toggleSideBar()" style="cursor: pointer;">
             <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
         <a routerLink="huzaifaanjum" >
@@ -15,19 +15,19 @@
     <div class="collapse navbar-collapse justify-content-end themeColor" id="navbarCollapse">
         <ul class="navbar-nav" >
             <li class="nav-item">
-                <a class="nav-link" (click)="scrollToView('about')">About</a>
+                <a class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" (click)="scrollToView('technicalSkills')">Technical Skills</a>
+                <a class="nav-link">Technical Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" (click)="scrollToView('interests')">Interests</a>
+                <a class="nav-link">Interests</a>
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" (click)="scrollToView('blogs')">Blogs</a>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link" (click)="scrollToView('contact')">Contact</a>
+                <a class="nav-link">Contact</a>
             </li>
         </ul>
     </div>

@@ -24,11 +24,6 @@
     position: fixed;
 }
 
-.setPadding {
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
 .mail{
     color: #c71610;
 }

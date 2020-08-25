@@ -1,0 +1,22 @@
+.setPadding {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+@media only screen and (max-width : 400px) {
+    
+    .setPadding {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .setPadding {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+}

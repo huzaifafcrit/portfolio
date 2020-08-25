@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { USER_DATA } from '../../../../assets/json/user-info';
 
 @Component({
   selector: 'app-user-info',
   templateUrl: './user-info.component.html',
   styleUrls: ['./user-info.component.css']
 })
-export class UserInfoComponent implements OnInit {
+export class UserInfoComponent {
 
-  constructor() { }
+  @Input() heightValue = null;
+  @Input() displayName = null;
 
-  ngOnInit(): void {
-  }
+  aboutUser: any;
+
+  constructor() {
+    this.displayName = true;
+    this.aboutUser = USER_DATA.About;
+   }
 
 }

@@ -1,0 +1,109 @@
+.interestName {
+    font-size: 15px; 
+    color: rgba(0, 0, 0, 0.72);
+}
+
+h1, .material-icons {
+    color: rgba(0,0,0,0.72)
+}
+
+.card-update {
+    border-radius: 3px; 
+    padding-top: 5%;
+    padding-bottom: 3%;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,.4);
+}
+
+.card-update:hover {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: white;
+    border: none;
+}
+
+.techIcon { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100px !important;
+    height: 100px !important ;
+}
+
+.card {
+    border: none;   
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .interestName {
+        font-size: 20px; 
+        color: rgba(0, 0, 0, 0.72);
+    }
+
+    .techIcon { 
+        width: 150px !important;
+        height: 150px !important ;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .interestName {
+        font-size: 20px; 
+        color: rgba(0, 0, 0, 0.72);
+    }
+
+    .techIcon { 
+        width: 100px !important;
+        height: 100px !important ;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .card-update {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .card-header, .card-body {
+        padding: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .interestName {
+        font-size: 17px; 
+        color: rgba(0, 0, 0, 0.72);
+    }
+
+    .techIcon { 
+        width: 90px !important;
+        height: 90px !important ;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .card-update {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .card-header, .card-body {
+        padding: 0;
+    }
+
+}

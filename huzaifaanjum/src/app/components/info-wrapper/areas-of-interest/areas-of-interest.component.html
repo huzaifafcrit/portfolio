@@ -1,1 +1,14 @@
-<p>areas-of-interest works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="areaHeading mt-5 mb-5">Interests</h1>
+        <div class="row mt-4">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 pl-3 pr-3" *ngFor="let interest of userInterests.value">
+                <div class="text-center cardOnHover p-3 mb-3">
+                    <i class="material-icons iconSize" [style.color]="interest.color">{{ interest.icon }}</i>
+                    <br>
+                    <p class="interestName"> {{ interest.name }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.links {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: white; border-radius: 2px;  
+    font-size: 15px; 
+    width: 135px;
+    margin-right: 5px;
+}
+
+.links.linkedIn {
+    background-color: darkcyan;
+    color: #fff;
+}
+
+.links.contact {
+    margin-left: auto;
+    background-color: royalblue;
+    color: #fff;
+}
+
+.userName {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.setPadding{
+    padding: 5% 2% 5% 2%;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 450;
+}
+
+h4.userData {
+    color: rgba(0, 0, 0, 0.6);
+}
+  
+@media only screen and (max-width: 600px) {
+    .centerItem {
+      text-align: center;
+    }
+
+    .setPadding{
+        padding: 5%;
+    }
+
+    .userName {
+        padding-top: 10%;
+    }
+
+}

@@ -1,0 +1,14 @@
+.bk {
+    background-image: url('../assets/img/bk.webp');
+    width: 100%;
+    top: 0;
+    height: 440px;
+    position: absolute;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topSpace {
+    padding-top: 7%;
+}

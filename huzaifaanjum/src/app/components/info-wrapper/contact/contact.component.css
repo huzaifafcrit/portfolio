@@ -1,0 +1,114 @@
+.card-update {
+    height: 500px; 
+    width: 100%; 
+    border-radius: 3px; 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
+  }
+  
+.btn, .btn:focus, .btn:active, .btn:hover {
+    outline: none;
+    box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .btn {
+    width: 100%; 
+    border-radius: 3px; 
+    background-color: #007bff;
+    color: white;
+  }
+
+  .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .beforeLogin {
+    background-color: #007bff;
+    z-index: 100;
+  }
+
+  .beforeLogin > h1 {
+    color: #fff !important;
+  }
+
+  .afterLogin {
+    background-color: none;
+    color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+
+  .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .post-container { 
+    border: 1px solid #007bff;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #007bff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.post-thumb {
+    float: left;
+    background-color: #007bff;
+}
+.post-thumb img {
+    display: block;
+    background-color: #007bff;
+}
+.post-content {
+  margin-top: 15px;
+  margin-left: 90px;
+  background-color: #007bff;
+}
+.post-title {
+    font-weight: bold;
+    font-size: 100%;
+    background-color: #007bff;
+}
+
+.contactCardPadding {
+  padding: 13%;
+}
+
+
+@media only screen and (max-width : 400px) {
+    
+  .contactCardPadding {
+    padding: 3%;
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .contactCardPadding {
+    padding: 3%;
+    padding-top: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  
+  .contactCardPadding {
+    padding: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  
+  .contactCardPadding {
+    padding: 10%;
+  }
+
+}

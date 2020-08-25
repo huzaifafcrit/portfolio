@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-technical-skills',
   templateUrl: './technical-skills.component.html',
   styleUrls: ['./technical-skills.component.css']
 })
-export class TechnicalSkillsComponent implements OnInit {
+export class TechnicalSkillsComponent implements AfterViewInit {
 
-  constructor() { }
+  size = 10;
 
-  ngOnInit(): void {
+  // tslint:disable-next-line: typedef
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.size = 200;
+    }, 50);
   }
 
 }
