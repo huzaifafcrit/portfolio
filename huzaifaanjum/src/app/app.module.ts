@@ -22,6 +22,7 @@ import { ContactComponent } from './components/info-wrapper/contact/contact.comp
 import { TechnicalSkillsComponent } from './components/info-wrapper/technical-skills/technical-skills.component';
 import { AboutMeComponent } from './components/info-wrapper/about-me/about-me.component';
 import { UserInfoComponent } from './components/info-wrapper/user-info/user-info.component';
+import { TimelineComponent } from './components/info-wrapper/timeline/timeline.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { UserInfoComponent } from './components/info-wrapper/user-info/user-info
     ContactComponent,
     TechnicalSkillsComponent,
     AboutMeComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

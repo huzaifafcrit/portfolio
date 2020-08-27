@@ -9,6 +9,11 @@ export class HeaderComponent {
 
   loggedIn = false;
 
+  scrollToSection(section) {
+    const element = document.getElementById(section);
+    element.scrollIntoView();
+  }
+
   toggleSideBar() {
     // sidenav.toggle()
   }

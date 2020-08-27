@@ -1,4 +1,5 @@
 .links {
+    letter-spacing: 0.03rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     color: white; border-radius: 2px;  
     font-size: 15px; 
@@ -20,6 +21,7 @@
 .userName {
     font-size: 40px;
     color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.01rem;
 }
 
 .setPadding{
@@ -27,12 +29,14 @@
 }
 
 h4 {
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 450;
+    letter-spacing: 0.02rem;
 }
 
 h4.userData {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.02rem;
 }
   
 @media only screen and (max-width: 600px) {

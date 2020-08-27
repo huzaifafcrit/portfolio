@@ -11,14 +11,14 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <h1 class="centerItem userName"> {{ aboutUser.name }} </h1>
-                                    <h3 class="centerItem pt-2" style="color: rgba(0, 0, 0, 0.5);">
+                                    <h3 class="centerItem pt-2" style="letter-spacing: 0.04rem; color: rgba(0, 0, 0, 0.8);">
                                         {{ aboutUser.occupation }} </h3>
-                                    <div class="row pb-4 mb-1 mt-1">
-                                        <div class="col-md-12 centerItem">
+                                    <div class="row pb-3">
+                                        <div class="col-md-12 my-2 centerItem">
                                             <a href="https://in.linkedin.com/in/huzaifa-anjum-90b117133?trk=public_profile_browsemap_mini-profile_title" class="links linkedIn btn">
                                                 LinkedIn
                                             </a>
-                                            <a style="color: white;" class="links contact btn">
+                                            <a style="color: white;" class="links contact btn" (click)="scrollToContact()">
                                                 Contact 
                                             </a>
                                         </div>

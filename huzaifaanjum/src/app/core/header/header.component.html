@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top themeColor">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top themeColor" id="navbar">
     <a class="navbar-brand">
         <a (click)="toggleSideBar()" style="cursor: pointer;">
             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -15,19 +15,22 @@
     <div class="collapse navbar-collapse justify-content-end themeColor" id="navbarCollapse">
         <ul class="navbar-nav" >
             <li class="nav-item">
-                <a class="nav-link">About</a>
+                <a class="nav-link" href="#about" onclick="event.preventDefault();" (click)="scrollToSection('about')">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Technical Skills</a>
+                <a class="nav-link" href="#skills" onclick="event.preventDefault();" (click)="scrollToSection('skills')">Technical Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Interests</a>
+                <a class="nav-link" href="#experience" onclick="event.preventDefault();" (click)="scrollToSection('experience')">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#interests" onclick="event.preventDefault();" (click)="scrollToSection('interests')">Interests</a>
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" (click)="scrollToView('blogs')">Blogs</a>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link">Contact</a>
+                <a class="nav-link" href="#contact" onclick="event.preventDefault();" (click)="scrollToSection('contact')">Contact</a>
             </li>
         </ul>
     </div>

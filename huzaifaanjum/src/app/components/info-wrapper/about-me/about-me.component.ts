@@ -13,4 +13,8 @@ export class AboutMeComponent {
     this.aboutUser = USER_DATA.About;
   }
 
+  scrollToContact(): void {
+    document.getElementById('contact').scrollIntoView();
+  }
+
 }

@@ -4,6 +4,10 @@
     color: white;
 }
 
+li {
+    letter-spacing: 0.04rem;
+}
+
 .navbar-light {
     background-color: white;
 }
@@ -11,6 +15,14 @@
 .navbar-light .nav-item > .nav-link {
     color: rgba(0,0,0, 0.7);
     cursor: pointer;
+}
+
+.nav-link.active {
+    background-color: transparent;
+    border-radius: 0%;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition-timing-function: ease-out;
 }
 
 .back-arrow {
@@ -118,6 +130,11 @@
 
     .nameStyle {
         color: rgba(0,0,0,0.7);
+    }
+
+    .nav-link.active {
+        color: #006cb6;
+        border-bottom: 2px solid #006cb6;
     }
 
 }
