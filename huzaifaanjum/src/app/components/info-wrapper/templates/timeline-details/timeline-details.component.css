@@ -1,0 +1,15 @@
+h3 {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.fa-times {
+    float: right;
+    cursor: pointer;
+    padding-top: 7px;
+    color: rgba(0, 0, 0, 0.8);
+}

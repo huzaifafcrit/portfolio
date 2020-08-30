@@ -85,6 +85,7 @@
   
   /* The actual content */
   .content-right {
+    cursor: pointer;
     padding: 20px 30px;
     background-color: white;
     position: relative;
@@ -93,6 +94,7 @@
   }
 
   .content-left {
+    cursor: pointer;
     padding: 20px 30px;
     background-color: white;
     position: relative;
@@ -139,3 +141,8 @@
     }
 
   }
+
+.fas {
+  color: #006cb6;
+  margin-right: 3px;
+}

@@ -133,8 +133,20 @@ li {
     }
 
     .nav-link.active {
-        color: #006cb6;
+        color: #004b7c !important ;
         border-bottom: 2px solid #006cb6;
     }
 
 }
+
+.progress-container {
+    width: 100%;
+    background: #fff;
+    border: none;
+  }
+  
+  .progress-bar {
+    height: 3px;
+    background: #006cb6;
+    width: 0%;
+  }
