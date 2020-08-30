@@ -27,3 +27,13 @@ html {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
+.txt-primary {
+    color: #006cb6;
+    letter-spacing: 0.03rem;
+    font-weight: 450;
+}
+
+.txt-words {
+    letter-spacing: 0.019rem;
+}

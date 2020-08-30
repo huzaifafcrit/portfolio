@@ -23,6 +23,8 @@ import { TechnicalSkillsComponent } from './components/info-wrapper/technical-sk
 import { AboutMeComponent } from './components/info-wrapper/about-me/about-me.component';
 import { UserInfoComponent } from './components/info-wrapper/user-info/user-info.component';
 import { TimelineComponent } from './components/info-wrapper/timeline/timeline.component';
+import { TimelineDetailsComponent } from './components/info-wrapper/templates/timeline-details/timeline-details.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { TimelineComponent } from './components/info-wrapper/timeline/timeline.c
     TechnicalSkillsComponent,
     AboutMeComponent,
     UserInfoComponent,
-    TimelineComponent
+    TimelineComponent,
+    TimelineDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { TimelineComponent } from './components/info-wrapper/timeline/timeline.c
     BrowserAnimationsModule,
     MatSidenavModule,
     MatInputModule,
+    MatDialogModule,
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
