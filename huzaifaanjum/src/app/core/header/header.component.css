@@ -2,6 +2,15 @@
     cursor: pointer; 
     margin-left: 10px;
     color: white;
+    text-decoration: none;
+}
+
+.fa-bars:hover {
+    color: #006cb6;
+}
+
+.nameStyle > span:focus, span:hover {
+    color: #006cb6;
 }
 
 li {
@@ -135,6 +144,10 @@ li {
     .nav-link.active {
         color: #004b7c !important ;
         border-bottom: 2px solid #006cb6;
+    }
+
+    .nav-link:hover {
+        color: #004b7c !important ;
     }
 
 }

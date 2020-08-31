@@ -102,7 +102,7 @@ export const TIMELINE_DATA = [
         id: 3,
         duration: '2015 - 2019' ,
         title: 'Bachelor of Engineering - BE, Information Technology from Mumbai University',
-        description: 'Graduated with a CGPA of <b> 8.96 </b> in Bachelor of Engineering - BE, Information Technology from Mumbai University. During the graduation period I got to work on several Projects and Mini-Projects, organized a fest, attended and conducted technical workshops for CSI and won several football tournaments.',
+        description: 'Graduated with a CGPA of 8.96 in Bachelor of Engineering - BE, Information Technology from Mumbai University. During the graduation period I got to work on several Projects and Mini-Projects, organized a fest, attended and conducted technical workshops for CSI and won several football tournaments.',
         footer : {
             licon: 'fa-tools',
             lname: 'Projects : ',

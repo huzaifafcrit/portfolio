@@ -12,3 +12,10 @@
 .topSpace {
     padding-top: 7%;
 }
+
+.sideBar {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.93);
+  color: white;
+}

@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  closeSidebar(targetDiv): void {
+    const element = document.getElementById('sidebarBtn') as HTMLElement ;
+    element.click();
+    const el = document.getElementById(targetDiv) as HTMLElement;
+    el.scrollIntoView();
   }
 
 }
