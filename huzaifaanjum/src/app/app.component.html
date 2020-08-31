@@ -1,13 +1,15 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav class="sideBar" style="background-color: rgba(0, 0, 0, 0.95);">
+  <mat-sidenav #sidenav class="sideBar">
     <a class="back-arrow" (click)="sidenav.toggle()" id="sidebarBtn">
-      <i class="material-icons" style="color: white; cursor: pointer;">arrow_back</i>
+      <i class="material-icons" style="color: white; cursor: pointer; float: right; margin: 15px;">arrow_back</i>
     </a>
+    <br>
     <app-sidebar></app-sidebar>
   </mat-sidenav>
   <mat-sidenav-content style="background-color: white;">
     <header>
       <app-header></app-header>
+      <a (click)="sidenav.toggle()" id="sideBarToggle" style="opacity: 0;" ></a>
     </header>
     <div class="bk" id="about"></div>
     <div class="topSpace"></div>

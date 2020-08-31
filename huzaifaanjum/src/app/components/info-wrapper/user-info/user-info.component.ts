@@ -9,12 +9,11 @@ import { USER_DATA } from '../../../../assets/json/user-info';
 export class UserInfoComponent {
 
   @Input() heightValue = null;
-  @Input() displayName = null;
+  @Input() displayName = false;
 
   aboutUser: any;
 
   constructor() {
-    this.displayName = true;
     this.aboutUser = USER_DATA.About;
    }
 

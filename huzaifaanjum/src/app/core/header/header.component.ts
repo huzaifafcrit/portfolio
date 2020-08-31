@@ -22,8 +22,8 @@ export class HeaderComponent {
     element.scrollIntoView();
   }
 
-  toggleSideBar() {
-    // sidenav.toggle()
+  toggleSideBar(): void {
+    document.getElementById('sideBarToggle').click();
   }
 
   signIn() {

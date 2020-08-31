@@ -1,1 +1,28 @@
-<p>sidebar works!</p>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <app-user-info [heightValue]="200" [displayName]="true"></app-user-info>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 pt-3">
+            <ul class="navList">
+                <li>
+                    <a (click)="closeSidebar('about')">About</a>
+                </li>
+                <li>
+                    <a (click)="closeSidebar('skills')">Technical Skills</a>
+                </li>
+                <li>
+                    <a (click)="closeSidebar('experience')">Experience</a>
+                </li>
+                <li>
+                    <a (click)="closeSidebar('interests')">Interests</a>
+                </li>
+                <li>
+                    <a (click)="closeSidebar('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

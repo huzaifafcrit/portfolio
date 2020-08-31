@@ -1,5 +1,6 @@
 .social-icons-container {
-    padding-top: 10%;
+    margin-top: 54px;
+    margin-bottom: 10px;
 }
 
 .social-icons {
@@ -7,7 +8,8 @@
     text-decoration: none;
     list-style-type: none;
     text-align: center;
-    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 23px;
     outline: none;
 }
