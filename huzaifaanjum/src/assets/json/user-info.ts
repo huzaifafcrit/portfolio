@@ -120,3 +120,37 @@ export const TIMELINE_DATA = [
         footer : null
     }
 ];
+
+export const CAROUSEL_IMAGES_DETAILS = [
+    {
+        id: 1,
+        title: 'ATP',
+        category: 'mfst',
+        src: '../../../../assets/img/certificate/AngularCertificate/Angular - Angular CLI course completion certificate-1.png'
+    },
+    {
+        id: 2,
+        title: 'AO',
+        category: 'pluralsight',
+        src: '../../../../assets/img/certificate/AngularCertificate/Angular - Angular Forms course completion certificate-1.png'
+    },
+    {
+        id: 3,
+        title: 'USOPEN',
+        category: 'pluralsight',
+        src: '../../../../assets/img/certificate/AngularCertificate/Angular - Getting Started course completion certificate-1.png'
+    },
+    {
+        id: 4,
+        title: 'WIMBLEDON',
+        category: 'pluralsight',
+        src: '../../../../assets/img/certificate/AngularCertificate/Angular - The Big Picture course completion certificate-1.png'
+    },
+    {
+        id: 5,
+        title: 'WIMBLEDON',
+        category: 'pluralsight',
+        src: '../../../../assets/img/certificate/mfst/Azure Fundamentals Certificate-1.jpg'
+    },
+
+];

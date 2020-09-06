@@ -26,6 +26,8 @@ import { TimelineComponent } from './components/info-wrapper/timeline/timeline.c
 import { TimelineDetailsComponent } from './components/info-wrapper/templates/timeline-details/timeline-details.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProjectsComponent } from './components/info-wrapper/projects/projects.component';
+import { CertificatesComponent } from './components/info-wrapper/certificates/certificates.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import { ProjectsComponent } from './components/info-wrapper/projects/projects.c
     UserInfoComponent,
     TimelineComponent,
     TimelineDetailsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { ProjectsComponent } from './components/info-wrapper/projects/projects.c
     ReactiveFormsModule,
     MatMenuModule,
     MatIconModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

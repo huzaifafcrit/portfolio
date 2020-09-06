@@ -1,0 +1,32 @@
+<h1 class="areaHeading pt-5 pb-1 mt-3">Certificates</h1>
+<div class="card">
+    <ngb-carousel #carousel [interval]="3000" class="card-shadow" style="border-radius: 3px;">
+        <ng-template ngbSlide *ngFor="let img of images | async">
+            <div>
+                <img class="carousal-img" [src]="img.src" alt="{{ img.title }}" width="100%">
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+
+<div class="row pt-3">
+    <div class="col-md-8">
+        <div class="card">
+            <img class="carousal-img" [src]="leftimg.src" alt="{{ leftimg.title }}" width="100%" height="auto">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img class="carousal-img" [src]="rightimg.src" alt="{{ rightimg.title }}" width="100%" height="auto">
+        </div>
+
+        <div class="pt-5">
+            <h1 class="text-center pt-5 grad1"
+                style="font-size: xx-large; font-weight: 500; cursor: pointer; letter-spacing: 0.1rem; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;">
+                View All <i class="fas fa-angle-double-right" style="font-size: 35px;"></i>
+            </h1>
+        </div>
+
+    </div>
+</div>
