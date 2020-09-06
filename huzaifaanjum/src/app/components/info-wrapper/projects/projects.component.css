@@ -1,0 +1,108 @@
+.card{
+    list-style: none;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    background: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.8); 
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 130%;
+    width: 100%;
+    border: none;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.6) contrast(1.1);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover > .card:not(:hover) .card__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .card__content{
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    letter-spacing: 0.1rem;
+  }
+  
+  .card__category{
+    font-size: x-small;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+      font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    letter-spacing: 0.1rem;
+  }
+
+  @media only screen and (max-width : 400px) {
+    
+    .card:before{
+        padding-bottom: 110%;
+      }
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .card:before{
+        padding-bottom: 110%;
+      }
+
+      .card{
+          margin-bottom: 20px;
+      }
+  }
+  
+  @media only screen and (max-width: 850px) {
+    
+    .card:before{
+        padding-bottom: 130%;
+      }
+
+      .card__category {
+          font-size: smaller;
+      }
+
+      .card__heading {
+          font-size: x-large;
+      }
+
+      .card {
+          padding-bottom: 20px;
+      }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    
+  
+  }

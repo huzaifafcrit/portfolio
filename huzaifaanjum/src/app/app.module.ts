@@ -25,6 +25,7 @@ import { UserInfoComponent } from './components/info-wrapper/user-info/user-info
 import { TimelineComponent } from './components/info-wrapper/timeline/timeline.component';
 import { TimelineDetailsComponent } from './components/info-wrapper/templates/timeline-details/timeline-details.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ProjectsComponent } from './components/info-wrapper/projects/projects.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutMeComponent,
     UserInfoComponent,
     TimelineComponent,
-    TimelineDetailsComponent
+    TimelineDetailsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
