@@ -9,7 +9,7 @@ export const USER_DATA = {
             },
             {
                 title: 'Address',
-                value: 'Sanpada, Navi Mumbai.'
+                value: 'Navi Mumbai, Maharashtra, India.'
             },
             {
                 title: 'Email',
