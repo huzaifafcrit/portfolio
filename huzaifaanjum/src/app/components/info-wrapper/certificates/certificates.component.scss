@@ -2,6 +2,9 @@
     color: #006cb6;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: brightness(0) !important;
+}
 
 @media only screen and (max-width : 400px) {
     

@@ -11,6 +11,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { ToastrModule } from 'ngx-toastr';
 
 import { HeaderComponent } from './core/header/header.component';
@@ -28,6 +31,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ProjectsComponent } from './components/info-wrapper/projects/projects.component';
 import { CertificatesComponent } from './components/info-wrapper/certificates/certificates.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CertificateTemplateComponent } from './components/info-wrapper/templates/certificate-template/certificate-template.component';
+import { ProjectDetailsTemplateComponent } from './components/info-wrapper/templates/project-details-template/project-details-template.component';
 
 
 @NgModule({
@@ -45,7 +50,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TimelineComponent,
     TimelineDetailsComponent,
     ProjectsComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    CertificateTemplateComponent,
+    ProjectDetailsTemplateComponent
   ],
   imports: [
     BrowserModule,
@@ -53,8 +60,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatInputModule,
+    MatChipsModule,
+    MatToolbarModule,
     MatDialogModule,
     MatFormFieldModule,
+    MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,

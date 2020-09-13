@@ -6,14 +6,23 @@
     <br>
     <app-sidebar></app-sidebar>
   </mat-sidenav>
+
   <mat-sidenav-content style="background-color: white;">
-    <header>
-      <app-header></app-header>
-      <a (click)="sidenav.toggle()" id="sideBarToggle" style="opacity: 0;" ></a>
-    </header>
-    <div class="bk" id="about"></div>
-    <div class="topSpace"></div>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <mat-sidenav-container hasBackdrop="false">
+      <mat-sidenav #left position="end" class="info-container">
+        <app-project-details-template></app-project-details-template>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <header>
+          <app-header></app-header>
+          <a (click)="sidenav.toggle()" id="sideBarToggle" style="opacity: 0;"></a>
+        </header>
+        <div class="bk" id="about"></div>
+        <div class="topSpace"></div>
+        <router-outlet></router-outlet>
+        <button mat-button (click)="left.toggle()" id="rightSideBar" style="width: 0; height: 0; opacity: 0;">left</button>
+        <app-footer></app-footer>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
   </mat-sidenav-content>
 </mat-sidenav-container>
