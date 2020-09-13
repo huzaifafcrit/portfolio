@@ -1,0 +1,14 @@
+<h1 class="areaHeading py-5 mt-3">Projects</h1>
+<div class="row">
+    <div class="col-md-4" *ngFor="let project of projects | async">
+        <a class="card" (click)="showDetails(project.id)" >
+            <div class="card__content">
+                <p class="card__category">Project</p>
+                <h3 class="card__heading"> {{ project.title }} </h3>
+                <p>{{ project.shortDescription }} </p>
+                <img [src]="project.imgSrc" alt="portfolio" width="100%" height="auto" [class]="project.class">
+                <p class="pt-2" style="text-align: center;"> {{ project.year }} </p>
+            </div>
+        </a>
+    </div>
+</div>

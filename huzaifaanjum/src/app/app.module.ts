@@ -11,6 +11,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { ToastrModule } from 'ngx-toastr';
 
 import { HeaderComponent } from './core/header/header.component';
@@ -25,6 +28,11 @@ import { UserInfoComponent } from './components/info-wrapper/user-info/user-info
 import { TimelineComponent } from './components/info-wrapper/timeline/timeline.component';
 import { TimelineDetailsComponent } from './components/info-wrapper/templates/timeline-details/timeline-details.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ProjectsComponent } from './components/info-wrapper/projects/projects.component';
+import { CertificatesComponent } from './components/info-wrapper/certificates/certificates.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CertificateTemplateComponent } from './components/info-wrapper/templates/certificate-template/certificate-template.component';
+import { ProjectDetailsTemplateComponent } from './components/info-wrapper/templates/project-details-template/project-details-template.component';
 
 
 @NgModule({
@@ -40,7 +48,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutMeComponent,
     UserInfoComponent,
     TimelineComponent,
-    TimelineDetailsComponent
+    TimelineDetailsComponent,
+    ProjectsComponent,
+    CertificatesComponent,
+    CertificateTemplateComponent,
+    ProjectDetailsTemplateComponent
   ],
   imports: [
     BrowserModule,
@@ -48,13 +60,17 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatInputModule,
+    MatChipsModule,
+    MatToolbarModule,
     MatDialogModule,
     MatFormFieldModule,
+    MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,
     MatIconModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
