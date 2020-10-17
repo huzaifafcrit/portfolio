@@ -2,12 +2,12 @@
 <div class="row">
     <div class="col-md-12">
         <div class="row">
-            <div class="col-md-12 col-lg-7 col-xl-7 mb-3">
-                <div class="card contactCardPadding card-update"
-                    [ngClass]=" { 'beforeLogin' : !loggedIn, 'afterLogin': loggedIn } ">
-                    <h1 class="text-center"> Hey There, happy to hear from you. </h1>
+            <div class="col-md-12 col-lg-7 col-xl-7 mb-3" >
+                <div class="card card-update"
+                    [ngClass]=" { 'beforeLogin' : !loggedIn, 'afterLogin': loggedIn, 'contactCardPadding': loggedIn } ">
                     <form *ngIf="loggedIn" class="example-form" [formGroup]="contactForm"
                         (ngSubmit)="onSubmit(contactForm.value)">
+                        <h1 class="text-center"> Hey There, happy to hear from you. </h1>
                         <br>
                         <div class="post-container">
                             <div class="post-thumb">
@@ -34,17 +34,18 @@
                         <br>
                         <button class="btn" type="submit">Submit</button>
                     </form>
-                    <div *ngIf="!loggedIn" style="height: inherit;" class="pt-5 mt-5 pl-3 pr-3">
-                        <a class="btn" style="background-color: white; width: unset; display: block; padding: 5%;"
+                    <div *ngIf="!loggedIn" style="height: 100%;">
+                        <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+                            <a style="background-color: white; padding: 2%;
+                        width: fit-content;
+                        border-radius: 50%; display: inline-block; cursor: pointer;"
                             (click)="this.auth.googleSignin()">
-                            <i class="fa fa-google" aria-hidden="true"></i>
-                            &nbsp; Google Login
-                        </a>
-                        <br> <br>
-                        <a *ngIf="false" class="btn" style="background-color: white; width: unset;  display: block;"> <i
-                                class="fa fa-facebook" style="color: #4267B2;" aria-hidden="true"></i> &nbsp; Facebook
-                            Login
-                        </a>
+                            <i class="fa fa-google" aria-hidden="true" style="font-size: 50px;"></i>
+                        </a> 
+                        <span class="contact-text ml-2">
+                            Hey There, happy to hear from you.
+                        </span>
+                        </div>
                     </div>
                 </div>
             </div>

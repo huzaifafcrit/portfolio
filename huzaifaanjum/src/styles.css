@@ -37,3 +37,8 @@ html {
 .txt-words {
     letter-spacing: 0.019rem;
 }
+
+.mat-drawer-container {
+    background-color: #fff !important;
+    color: rgba(0,0,0,.87);
+}
