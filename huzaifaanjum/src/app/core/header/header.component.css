@@ -69,6 +69,18 @@ li {
 
 @media only screen and (max-width : 400px) {
     
+    .progress-container {
+        width: 100%;
+        background: #006cb6;
+        border: none;
+      }
+      
+      .progress-bar {
+        height: 4px;
+        background: gold;
+        width: 0%;
+      }
+
     .setPadding {
         padding-left: 0%;
         padding-right: 0%;
@@ -91,6 +103,18 @@ li {
 
 @media only screen and (max-width: 600px) {
     
+    .progress-container {
+        width: 100%;
+        background: #006cb6;
+        border: none;
+      }
+      
+      .progress-bar {
+        height: 4px;
+        background: gold;
+        width: 0%;
+      }
+
     .setPadding {
         padding-left: 0%;
         padding-right: 0%;
@@ -121,6 +145,18 @@ li {
         color: white;
     }
 
+    .progress-container {
+        width: 100%;
+        background: #006cb6;
+        border: none;
+      }
+      
+      .progress-bar {
+        height: 4px;
+        background: gold;
+        width: 0%;
+      }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -150,16 +186,16 @@ li {
         color: #004b7c !important ;
     }
 
-}
+    .progress-container {
+        width: 100%;
+        background: #fff;
+        border: none;
+      }
+      
+      .progress-bar {
+        height: 4px;
+        background: #006cb6;
+        width: 0%;
+      }
 
-.progress-container {
-    width: 100%;
-    background: #fff;
-    border: none;
-  }
-  
-  .progress-bar {
-    height: 3px;
-    background: #006cb6;
-    width: 0%;
-  }
+}

@@ -29,19 +29,16 @@ export class CertificatesComponent {
     return this.imagesArray.find(i => i.id === 5);
   }
 
-  constructor(config: NgbCarouselConfig, public dialog: MatDialog) {
+  // tslint:disable-next-line: typedef
+  get rightimgBottom() {
+    return this.imagesArray.find(i => i.id === 6);
+  }
+
+  constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.interval = 5000;
     config.keyboard = false;
     config.pauseOnHover = true;
     config.showNavigationArrows = false;
-  }
-
-  openImage(imgSrc): void {
-    this.dialog.open(CertificateTemplateComponent, {
-      width: '100%',
-      height: '90%',
-      data: {imgSrc}
-    });
   }
 }

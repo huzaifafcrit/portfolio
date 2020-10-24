@@ -33,6 +33,8 @@ import { CertificatesComponent } from './components/info-wrapper/certificates/ce
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CertificateTemplateComponent } from './components/info-wrapper/templates/certificate-template/certificate-template.component';
 import { ProjectDetailsTemplateComponent } from './components/info-wrapper/templates/project-details-template/project-details-template.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -70,7 +72,8 @@ import { ProjectDetailsTemplateComponent } from './components/info-wrapper/templ
     MatMenuModule,
     MatIconModule,
     ToastrModule.forRoot(),
-    NgbModule
+    NgbModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

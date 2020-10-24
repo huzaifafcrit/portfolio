@@ -9,7 +9,7 @@ export const USER_DATA = {
             },
             {
                 title: 'Address',
-                value: 'Navi Mumbai, Maharashtra, India.'
+                value: 'Mumbai Suburban district, Maharashtra, India.'
             },
             {
                 title: 'Email',
@@ -124,35 +124,40 @@ export const TIMELINE_DATA = [
 export const CAROUSEL_IMAGES_DETAILS = [
     {
         id: 1,
-        title: 'ATP',
+        title: 'Angular Cli',
         category: 'mfst',
         src: '../../../../assets/img/certificate/AngularCertificate/Angular - Angular CLI course completion certificate-1.png'
     },
     {
+        id: 5,
+        title: 'Azure Fundamentals',
+        category: 'pluralsight',
+        src: '../../../../assets/img/certificate/mfst/Azure Fundamentals Certificate-1.jpg'
+    },
+    {
         id: 2,
-        title: 'AO',
+        title: 'Angular forms',
         category: 'pluralsight',
         src: '../../../../assets/img/certificate/AngularCertificate/Angular - Angular Forms course completion certificate-1.png'
     },
     {
         id: 3,
-        title: 'USOPEN',
+        title: 'Angular Getting Started',
         category: 'pluralsight',
         src: '../../../../assets/img/certificate/AngularCertificate/Angular - Getting Started course completion certificate-1.png'
     },
     {
-        id: 4,
-        title: 'WIMBLEDON',
-        category: 'pluralsight',
-        src: '../../../../assets/img/certificate/AngularCertificate/Angular - The Big Picture course completion certificate-1.png'
+        id: 6,
+        title: 'dotnet core 3.1',
+        category: 'udemy',
+        src: '../../../../assets/img/certificate/general/dotnet_core3.1_certificate.jpg'
     },
     {
-        id: 5,
-        title: 'WIMBLEDON',
+        id: 4,
+        title: 'Angular Big Picture',
         category: 'pluralsight',
-        src: '../../../../assets/img/certificate/mfst/Azure Fundamentals Certificate-1.jpg'
-    },
-
+        src: '../../../../assets/img/certificate/AngularCertificate/Angular - The Big Picture course completion certificate-1.png'
+    }
 ];
 
 
