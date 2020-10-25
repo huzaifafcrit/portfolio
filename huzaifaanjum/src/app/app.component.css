@@ -9,6 +9,14 @@
   background-size: cover;
 }
 
+.back-arrow {
+  color: white;
+  cursor: pointer;
+  margin: 15px;
+  position: fixed;
+  right: 0;
+}
+
 .topSpace {
     padding-top: 7%;
 }

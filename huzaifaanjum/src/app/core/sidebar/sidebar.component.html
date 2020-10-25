@@ -1,34 +1,62 @@
-<div class="container pt-5">
-    <div class="row">
-        <div class="col-md-12">
-            <app-user-info [heightValue]="200" [displayName]="true"></app-user-info>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 pt-3">
-            <ul class="navList">
-                <li>
-                    <a (click)="closeSidebar('about')">About</a>
-                </li>
-                <li>
-                    <a (click)="closeSidebar('skills')">Technical Skills</a>
-                </li>
-                <li>
-                    <a (click)="closeSidebar('experience')">Experience</a>
-                </li>
-                <li>
-                    <a (click)="closeSidebar('projects')">Projects</a>
-                </li>
-                <li>
-                    <a (click)="closeSidebar('certificates')">Certificates</a>
-                </li>
-                <li>
-                    <a (click)="closeSidebar('interests')">Interests</a>
-                </li>
-                <li>
-                    <a (click)="closeSidebar('contact')">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="navList">
+    <ul>
+        <li>
+            <a (click)="closeSidebar('about')">About</a>
+        </li>
+        <li>
+            <a (click)="closeSidebar('skills')">Technical Skills</a>
+        </li>
+        <li>
+            <a (click)="closeSidebar('experience')">Experience</a>
+        </li>
+        <li>
+            <a (click)="closeSidebar('projects')">Projects</a>
+        </li>
+        <li>
+            <a (click)="closeSidebar('certificates')">Certificates</a>
+        </li>
+        <li>
+            <a (click)="closeSidebar('interests')">Interests</a>
+        </li>
+        <li>
+            <a (click)="closeSidebar('contact')">Contact</a>
+        </li>
+        <li>
+            <div class="social-icons-container pt-3"
+                style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: block;">
+                    <a class="social-icons" href="#">
+                        <i class="fa fa-facebook-f" style="color: #4267B2;"></i>
+                    </a>
+                </div>
+
+                <div style="display: block;">
+                    <a class="social-icons" href="#">
+                        <i class="fa fa-twitter" style="color: #1DA1F2"></i>
+                    </a>
+                </div>
+
+                <div style="display: block;">
+                    <a class="social-icons"
+                        href="https://in.linkedin.com/in/huzaifa-anjum-90b117133?trk=public_profile_browsemap_mini-profile_title">
+                        <i class="fa fa-linkedin" style="color: #0e76a8"></i>
+                    </a>
+                </div>
+
+                <div style="display: block;">
+                    <a class="social-icons" href="#">
+                        <i class="fa fa-instagram insta"></i>
+                    </a>
+                </div>
+
+                <div style="display: block;">
+                    <a class="social-icons"
+                        href="https://open.spotify.com/user/hfyhrwd4gyaut1lpozi6gwys4?si=rXjewfG6Q0ajO8lRfxrVpA">
+                        <i class="fa fa-spotify" style="color: #1DB954;"></i>
+                    </a>
+                </div>
+
+            </div>
+        </li>
+    </ul>
 </div>
