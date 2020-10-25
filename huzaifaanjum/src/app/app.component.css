@@ -37,10 +37,50 @@
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 350px) {
   
   .info-container {
     width: 100%;
+  }
+
+  .topSpace {
+    padding-top: 50%;
+  }
+
+  .bk {
+    height: 5%;
+  }
+
+}
+
+@media only screen and (min-width: 450px) {
+  
+  .info-container {
+    width: 100%;
+  }
+
+  .topSpace {
+    padding-top: 50%;
+  }
+
+  .bk {
+    height: 6%;
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+  
+  .info-container {
+    width: 100%;
+  }
+
+  .topSpace {
+    padding-top: 7%;
+  }
+
+  .bk {
+    height: 440px;
   }
 
 }
