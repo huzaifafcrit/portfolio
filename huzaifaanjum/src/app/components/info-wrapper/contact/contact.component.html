@@ -35,16 +35,16 @@
                         <button class="btn" type="submit">Submit</button>
                     </form>
                     <div *ngIf="!loggedIn" style="height: 100%;">
-                        <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
-                            <a style="background-color: white; padding: 2%;
-                        width: fit-content;
-                        border-radius: 50%; display: inline-block; cursor: pointer;"
-                            (click)="this.auth.googleSignin()">
-                            <i class="fa fa-google" aria-hidden="true" style="font-size: 50px;"></i>
-                        </a> 
+                        <div style="padding-top: 370px;" class="text-center"> 
                         <span class="contact-text ml-2">
                             Hey There, happy to hear from you.
                         </span>
+                        </div>
+                        <div class="p-2 pt-3">
+                            <a class="googleBtn"
+                            (click)="this.auth.googleSignin()">
+                            <i class="fa fa-google" aria-hidden="true" style="font-size: 50px;"></i>
+                        </a>
                         </div>
                     </div>
                 </div>

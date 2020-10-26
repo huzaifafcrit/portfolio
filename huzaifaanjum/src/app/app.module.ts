@@ -14,6 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 import { ToastrModule } from 'ngx-toastr';
 
 import { HeaderComponent } from './core/header/header.component';
@@ -35,6 +37,7 @@ import { CertificateTemplateComponent } from './components/info-wrapper/template
 import { ProjectDetailsTemplateComponent } from './components/info-wrapper/templates/project-details-template/project-details-template.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SkillsComponent } from './components/info-wrapper/about-me/skills/skills.component';
 
 
 @NgModule({
@@ -54,7 +57,8 @@ import { environment } from '../environments/environment';
     ProjectsComponent,
     CertificatesComponent,
     CertificateTemplateComponent,
-    ProjectDetailsTemplateComponent
+    ProjectDetailsTemplateComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +70,7 @@ import { environment } from '../environments/environment';
     MatToolbarModule,
     MatDialogModule,
     MatFormFieldModule,
+    MatProgressBarModule,
     MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,

@@ -1,0 +1,38 @@
+<div class="py-5 mt-3">
+    <div class="card px-4 py-3">
+        <h4 class="summary">
+            {{ skills.summary }}
+        </h4>
+    </div>
+</div>
+
+<div class="row" style="text-transform: uppercase;">
+    <div class="col-md-6">
+        <div class="card p-3">
+            <h4 class="pb-2 border-bottom">
+                Technical Skills
+            </h4>
+            <div *ngFor="let skill of technicalSkills | async">
+                <p class="headingtext">
+                    {{ skill.name }}
+                </p>
+                <mat-progress-bar mode="determinate" [value]="skill.value"></mat-progress-bar>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card p-3">
+            <h4 class="pb-2 border-bottom">
+                Soft Skills
+            </h4>
+            <div *ngFor="let skill of softSkills | async">
+                <p class="headingtext">
+                    {{ skill.name }}
+                </p>
+                <mat-progress-bar mode="determinate" [value]="skill.value"></mat-progress-bar>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
