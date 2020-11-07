@@ -1,13 +1,4 @@
 {
-  "targets": {
-    "huzaifaanjum-1e492": {
-      "hosting": {
-        "huzaifaanjum": [
-          "huzaifaanjum-1e492"
-        ]
-      }
-    }
-  },
   "projects": {
     "default": "huzaifaanjum-1e492"
   }

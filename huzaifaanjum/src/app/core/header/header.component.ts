@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +9,16 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private _router: Router, public auth: AuthService) {
+    this.auth.user$.subscribe( (user) => {
+      if (user !== null) {
+        this.loggedIn = true;
+      } else {
+        this.loggedIn = false;
+      }
+    });
+  }
+  showNavItems: boolean;
   loggedIn = false;
 
   @HostListener('window:scroll')
@@ -26,12 +38,12 @@ export class HeaderComponent {
     document.getElementById('sideBarToggle').click();
   }
 
-  signIn() {
-    // this.auth.googleSignin().then(() => this.loggedIn = true);
+  signIn(): void {
+    this.auth.googleSignin().then(() => this.loggedIn = true);
   }
 
-  signOut() {
-    // this.auth.signout().then(() => this.loggedIn = false);
+  signOut(): void {
+    this.auth.signout().then(() => this.loggedIn = false);
   }
 
 }

@@ -7,7 +7,8 @@
   
 .btn, .btn:focus, .btn:active, .btn:hover {
     outline: none;
-    box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: x-large;
+    /* box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   }
 
   .btn {
@@ -26,20 +27,18 @@
   }
 
   .beforeLogin {
-    background-image: url('../../../../assets/img/handshake.jpg');
+    /* background-image: url('../../../../assets/img/handshake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
-    background-position: center;
+    background-position: center; */
     z-index: 100;
   }
 
   .googleBtn {
-    background-color: lightgray;
-    padding: 2%;
-    width: fit-content;
-    float: right;
-    border-radius: 50%;  cursor: pointer;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: xx-large;
   }
 
   .afterLogin {
@@ -125,7 +124,7 @@
 @media only screen and (max-width: 1200px) {
   
   .contactCardPadding {
-    padding: 10%;
+    padding: 5%;
   }
 
 }

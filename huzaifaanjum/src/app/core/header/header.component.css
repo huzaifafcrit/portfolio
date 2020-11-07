@@ -99,6 +99,10 @@ li {
         color: white;
     }
 
+    .nameStyle > span:focus, span:hover {
+        color: #fff;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -108,6 +112,10 @@ li {
         background: #006cb6;
         border: none;
       }
+
+      .nameStyle > span:focus, span:hover {
+        color: #fff;
+    }
       
       .progress-bar {
         height: 4px;
@@ -139,6 +147,10 @@ li {
     .navbar-light {
         background-color: #006cb6 !important;
         color: white;
+    }
+
+    .nameStyle > span:focus, span:hover {
+        color: #fff;
     }
 
     .navbar-light .nav-item, .navbar-light .nav-item .nav-link   {

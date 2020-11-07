@@ -38,6 +38,9 @@ import { ProjectDetailsTemplateComponent } from './components/info-wrapper/templ
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SkillsComponent } from './components/info-wrapper/about-me/skills/skills.component';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire';
 
 
 @NgModule({
@@ -61,6 +64,7 @@ import { SkillsComponent } from './components/info-wrapper/about-me/skills/skill
     SkillsComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -78,6 +82,9 @@ import { SkillsComponent } from './components/info-wrapper/about-me/skills/skill
     MatIconModule,
     ToastrModule.forRoot(),
     NgbModule,
+    AngularFireDatabaseModule,
+    ToastrModule.forRoot(),
+    AngularFireAuthModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
