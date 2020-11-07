@@ -25,7 +25,6 @@ export class ContactComponent {
       userComment: ''
     });
     this.auth.user$.subscribe( (user) => {
-      console.log(user);
       if (user === null) {
         this.loggedIn = false;
       } else {
@@ -39,7 +38,6 @@ export class ContactComponent {
    }
 
   onSubmit(contactData): void {
-    console.warn('Your order has been submitted', contactData);
     this.dbService.insertUserComment(contactData);
     this.contactForm.controls.userComment.setValue();
     this.toastr.success('Response Saved Successfully', 'Notification :');

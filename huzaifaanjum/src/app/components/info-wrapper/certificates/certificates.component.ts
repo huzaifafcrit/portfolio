@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { of } from 'rxjs';
 import { CAROUSEL_IMAGES_DETAILS } from 'src/assets/json/user-info';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import { MatDialog } from '@angular/material/dialog';
-import { CertificateTemplateComponent } from '../templates/certificate-template/certificate-template.component';
 
 @Component({
   selector: 'app-certificates',
@@ -14,8 +12,12 @@ export class CertificatesComponent {
 
   imagesArray = CAROUSEL_IMAGES_DETAILS;
 
+  loading = true;
+  loadingtopSideImage = true;
+  loadingBottomSideImage = true;
+
   // tslint:disable-next-line: typedef
-  get images(){
+  get images() {
     return of(this.imagesArray);
   }
 
@@ -40,5 +42,17 @@ export class CertificatesComponent {
     config.keyboard = false;
     config.pauseOnHover = true;
     config.showNavigationArrows = false;
+  }
+
+  onLoad(): void {
+    this.loading = false;
+  }
+
+  onLoadTopSideImage(): void {
+    this.loadingtopSideImage = false;
+  }
+
+  onLoadBottomSideImage(): void {
+    this.loadingBottomSideImage = false;
   }
 }

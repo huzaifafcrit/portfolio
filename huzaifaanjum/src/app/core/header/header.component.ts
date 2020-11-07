@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -9,7 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class HeaderComponent {
 
-  constructor(private _router: Router, public auth: AuthService) {
+  constructor(public auth: AuthService) {
     this.auth.user$.subscribe( (user) => {
       if (user !== null) {
         this.loggedIn = true;

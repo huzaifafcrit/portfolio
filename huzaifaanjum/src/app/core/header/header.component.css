@@ -176,6 +176,10 @@ li {
         width: 40%;
     }
 
+    .nameStyle > span:focus, span:hover {
+        color: #006cb6;
+    }
+
     .navbar-light {
         background-color: white !important;
         color: rgba(0,0,0,0.7);

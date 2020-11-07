@@ -12,9 +12,14 @@ export class UserInfoComponent {
   @Input() displayName = false;
 
   aboutUser: any;
+  loading = true;
 
   constructor() {
     this.aboutUser = USER_DATA.About;
-   }
+  }
+
+  onLoad(): void {
+    this.loading = false;
+  }
 
 }
