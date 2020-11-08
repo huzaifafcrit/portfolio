@@ -1,16 +1,18 @@
 <div class="txt-words">
-  <h2 cdkFocusInitial> {{ data.duration }} <i class="fas fa-times" (click)="closeDialog()"></i> </h2>
+  <h2 cdkFocusInitial> {{ data.duration }} <i class="far fa-times-circle" (click)="closeDialog()"></i> </h2>
   <h3 class="py-2"> {{ data.title }} </h3>
-  <h4>
-    {{ data.description }}
-  </h4>
-  <div *ngIf="data.link" class="py-2">
+  <div style="max-height: 50vh; overflow-y: auto;">
+    <h4>
+      {{ data.description }}
+    </h4>
+  </div>
+  <div *ngIf="data.link" class="pt-4 pb-2">
     <span style="font-weight: 450;">
       {{data.link.name}} :
     </span>
     <a [href]="data.link.value"> {{ data.link.displayName }} </a>
   </div>
-  <div class="text-right">
+  <div class="text-right py-2">
     <button class="btn btn-secondary" (click)="closeDialog()"> Close </button>
   </div>
 </div>

@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit {
   }
   showDetails(id): void {
     this.data.changeMessage(id);
-    document.getElementById('rightSideBar').click()
+    document.getElementById('rightSideBar').click();
   }
 
 
