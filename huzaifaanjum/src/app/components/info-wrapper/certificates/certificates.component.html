@@ -2,11 +2,11 @@
 
 <div class="row pt-3">
     <div class="col-md-8">
-        <div class="card" >
+        <div class="card">
             <ngb-carousel #carousel [interval]="3000" class="card-shadow" style="border-radius: 3px;">
                 <ng-template ngbSlide *ngFor="let img of images | async">
                         <mat-spinner *ngIf="loading" class="mat-spinner-color"></mat-spinner>
-                        <img style="max-height: 100%;" [hidden]="loading" (load)="onLoad()" class="carousal-img" [src]="img.src" alt="{{ img.title }}" width="100%">
+                        <img  style="max-height: 420px" height="auto" [hidden]="loading" (load)="onLoad()" class="carousal-img" [src]="img.src" alt="{{ img.title }}" width="100%">
                 </ng-template>
             </ngb-carousel>
         </div>

@@ -132,7 +132,7 @@ export const CAROUSEL_IMAGES_DETAILS = [
         id: 5,
         title: 'Azure Fundamentals',
         category: 'pluralsight',
-        src: '../../../../assets/img/certificate/mfst/Azure Fundamentals Certificate-1.jpg'
+        src: '../../../../assets/img/certificate/mfst/rsz_azure_fundamentals_certificate-1.png'
     },
     {
         id: 2,
@@ -150,7 +150,7 @@ export const CAROUSEL_IMAGES_DETAILS = [
         id: 6,
         title: 'dotnet core 3.1',
         category: 'udemy',
-        src: '../../../../assets/img/certificate/general/dotnet_core3.1_certificate.jpg'
+        src: '../../../../assets/img/certificate/general/rsz_1rsz_1rsz_1dotnet_core31_certificate.png'
     },
     {
         id: 7,
