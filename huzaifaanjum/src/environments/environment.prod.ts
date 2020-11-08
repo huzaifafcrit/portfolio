@@ -10,5 +10,16 @@ export const environment = {
     messagingSenderId: '245859763597',
     appId: '1:245859763597:web:46ff02fa9723fd4b0ba9c4',
     measurementId: 'G-RJR0L3S1H8'
+  },
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  firebaseConfigPortfolio: {
+    apiKey: 'AIzaSyAd2JU6oX8nrh_Td8sqIPV7HLkiGijsWDk',
+    authDomain: 'huzaifaanjumportfolio.firebaseapp.com',
+    databaseURL: 'https://huzaifaanjumportfolio.firebaseio.com',
+    projectId: 'huzaifaanjumportfolio',
+    storageBucket: 'huzaifaanjumportfolio.appspot.com',
+    messagingSenderId: '448995397394',
+    appId: '1:448995397394:web:14f7f3cc8278ed1fa3adcb',
+    measurementId: 'G-3612MQVFS4'
   }
 };

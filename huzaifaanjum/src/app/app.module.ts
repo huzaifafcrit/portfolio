@@ -64,7 +64,7 @@ import { AngularFireModule } from '@angular/fire';
     SkillsComponent
   ],
   imports: [
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfigPortfolio),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "huzaifaanjum-1e492"
+    "default": "huzaifaanjum-1e492",
+    "prod": "huzaifaanjumportfolio"
   }
 }
