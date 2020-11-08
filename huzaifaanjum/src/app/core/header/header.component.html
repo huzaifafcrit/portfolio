@@ -56,7 +56,7 @@
                     <mat-icon class="mail">mail</mat-icon>
                     <span>Contact Me</span>
                 </a>
-                <a mat-menu-item href="tel:+91 8879539141" style="text-decoration: none;">
+                <a mat-menu-item  *ngIf="loggedIn" href="tel:+91 8879539141" style="text-decoration: none;">
                     <mat-icon class="phone">local_phone</mat-icon>
                     <span>+91 88795 39141</span>
                 </a>

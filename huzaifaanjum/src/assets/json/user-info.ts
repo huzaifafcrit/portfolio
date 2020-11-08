@@ -16,8 +16,8 @@ export const USER_DATA = {
                 value: 'huzaifafcrit@gmail.com'
             },
             {
-                title: 'Phone',
-                value: '+91 8879539141'
+                title: 'Industry',
+                value: 'Information Technology'
             }
         ]
     },
@@ -64,7 +64,7 @@ export const TIMELINE_DATA = [
         id: 1,
         duration: '2019 - Present',
         title: 'Full Stack Developer & Dynamics 365 Customizer at Willis Towers Watson',
-        description: 'Developing and delivering production ready, enterprise grade applications which help the organization by reducing effort, perform more efficiently and save time & money. Continuously adding new and valuable features and functionality to the application in each monthly sprint. Monitoring and improving the performance of applications such as data loading time (reduced an application’s data loading time from 5-10sec to 0.5-1sec). Working on the following technologies, languages and tools: Angular, Asp.Net Core, Ms Sql Server, Cosmos DB, Azure Functions, Azure Cloud, Power BI, HTML, CSS, Bootstrap, Sass, Scss and more. Also, have experience on working with Microsoft Graph Api. Developing good quality code by adhering various principles such as SOLID’s principle and ONION Principle solving common problem statement using Design Patterns (Strategy Pattern) and Repository Pattern (for abstracting data logic). Writing and updating Unit tests for new/modified api’s to improve the robustness of the api’s. Have worked with Dapper and Entity Framework Core.  Improving application accessibility (Application could be used with keyboard or mouse or both) which help in reducing time and effort to complete a business process. CI/CD using Azure DevOps. Worked with Git for versioning and tracking code changes. Creating and managing NuGet Packages and Angular libraries. Also working as a D365 CRM Customizer.',
+        description: 'Developing and delivering production ready, enterprise grade applications which help the organization by reducing effort, perform more efficiently and save time & money. Continuously adding new and valuable features and functionality to the application in each sprint. Monitoring and improving the performance of applications (reduced an application’s data loading time from 5-10sec to 0.5-1sec). Improving application accessibility (Application could be used with keyboard or mouse or both) which help in reducing time and effort to complete a business process. Working on the following technologies, languages and tools: Angular, Asp.Net Core, Ms Sql Server, Cosmos DB, Azure Functions, Azure Cloud, Power BI, HTML, CSS, Bootstrap, Sass, Scss and more. Also, have experience on working with Microsoft Graph Api. Delivering high quality code by adhering to software development principles (SOLID’s principle, ONION Principle) using Design Patterns (Strategy Pattern) and Repository Pattern (for abstracting data logic). Developing robust api’s by following best practices and implementing unit tests. Have worked with Dapper and Entity Framework Core.  CI/CD using Azure DevOps. Worked with Git for versioning and tracking code changes. Creating and managing NuGet Packages and Angular libraries. Also working as a D365 CRM Customizer.',
         footer: {
             licon: 'fa-building',
             lname: '1 year 1 month',
