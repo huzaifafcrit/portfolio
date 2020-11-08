@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-12 col-lg-7 col-xl-7 mb-3">
-          <div class="card contactCardPadding card-update" [ngClass]=" { 'beforeLogin' : !loggedIn, 'afterLogin': loggedIn } ">
+          <div class="card contactCardPadding card-update" [ngClass]=" { 'beforeLogin' : !loggedIn, 'afterLogin': loggedIn, 'top-p': !loggedIn } ">
             <h1 class="text-center"> Hey There, happy to hear from you. </h1>
             <form *ngIf="loggedIn" class="example-form" [formGroup]="contactForm"
               (ngSubmit)="onSubmit(contactForm.value)">
@@ -35,7 +35,7 @@
               <a class="btn" style="background-color: white; width: unset; display: block; padding: 5%; padding-top: 3%;"
                 (click)="this.auth.googleSignin()">
                 <i class="fa fa-google" aria-hidden="true" style="font-size: 8rem;"></i> 
-                <h1 class="pt-3" style="word-spacing: 0.1rem; word-spacing: 0.19rem;">
+                <h1 class="pt-4" style="word-spacing: 0.1rem; word-spacing: 0.19rem;">
                   Sign In with Google
                 </h1>
               </a>
