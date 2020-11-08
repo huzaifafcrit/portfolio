@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { UserComments } from '../Models/userComments.model';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import * as firebase from 'firebase';
 
 @Injectable({
   providedIn: 'root'

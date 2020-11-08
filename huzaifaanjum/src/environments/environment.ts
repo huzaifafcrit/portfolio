@@ -26,7 +26,8 @@ export const environment = {
     messagingSenderId: '448995397394',
     appId: '1:448995397394:web:14f7f3cc8278ed1fa3adcb',
     measurementId: 'G-3612MQVFS4'
-  }
+  },
+  gsRefpath: 'gs://huzaifaanjumportfolio.appspot.com/huzaifa.pdf'
 };
 
 /*
