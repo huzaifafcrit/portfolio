@@ -71,7 +71,7 @@ export const TIMELINE_DATA = [
             lvalue: '',
             ricon: 'fa-certificate',
             rname: 'Certificates : ',
-            rvalue: '13'
+            rvalue: '14'
         },
         link: {
             name: 'LinkedIn',
@@ -123,9 +123,21 @@ export const TIMELINE_DATA = [
 
 export const CAROUSEL_IMAGES_DETAILS = [
     {
-        id: 1,
-        title: 'Angular Cli',
+        id: 3,
+        title: 'Html Css and JavaScript',
         category: 'mfst',
+        src: '../../../../assets/img/certificate/mfst/htmlcssjs.png'
+    },
+    {
+        id: 1,
+        title: 'SQL',
+        category: 'HackerRank',
+        src: '../../../../assets/img/certificate/general/sql.png'
+    },
+    {
+        id: 13,
+        title: 'Angular Cli',
+        category: 'pluralsight',
         src: '../../../../assets/img/certificate/AngularCertificate/Angular - Angular CLI course completion certificate-1.png'
     },
     {
@@ -135,25 +147,25 @@ export const CAROUSEL_IMAGES_DETAILS = [
         src: '../../../../assets/img/certificate/mfst/rsz_azure_fundamentals_certificate-1.png'
     },
     {
-        id: 2,
+        id: 14,
         title: 'Angular forms',
         category: 'pluralsight',
         src: '../../../../assets/img/certificate/AngularCertificate/Angular - Angular Forms course completion certificate-1.png'
     },
     {
-        id: 3,
+        id: 2,
         title: 'Angular Getting Started',
         category: 'pluralsight',
         src: '../../../../assets/img/certificate/AngularCertificate/Angular - Getting Started course completion certificate-1.png'
     },
     {
-        id: 6,
+        id: 7,
         title: 'dotnet core 3.1',
         category: 'udemy',
         src: '../../../../assets/img/certificate/general/rsz_1rsz_1rsz_1dotnet_core31_certificate.png'
     },
     {
-        id: 7,
+        id: 6,
         title: 'Angular HTTP Communication',
         category: 'pluralsight',
         src: '../../../../assets/img/certificate/AngularCertificate/Angular HTTP Communication-1.png'

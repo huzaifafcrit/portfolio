@@ -18,7 +18,7 @@ export class CertificatesComponent {
 
   // tslint:disable-next-line: typedef
   get images() {
-    return of(this.imagesArray);
+    return of(this.imagesArray.sort((a, b) => a.id - b.id));
   }
 
   // tslint:disable-next-line: typedef
