@@ -184,7 +184,7 @@ li {
 
     .nameStyle > span:focus, span:hover {
         /* color: #fff; */
-        color: rgba(0,0,0, 0.8) !important;
+        color: rgba(255, 255, 255, 0.8) !important;
     }
 
     .progress-container {
@@ -207,7 +207,7 @@ li {
     }
 
     .nameStyle > span:focus, span:hover {
-        color: #06224a;
+        color: #06224a !important;
     }
 
     .navbar-light {
@@ -225,7 +225,7 @@ li {
     }
 
     .scroll .navbar-nav .nav-link {
-        color: rgba(0,0,0, 0.7)
+        color: #06224a
     }
 
     /* .nav-item, .nav-item, .nav-link {
