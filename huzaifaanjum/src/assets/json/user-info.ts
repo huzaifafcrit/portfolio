@@ -285,7 +285,7 @@ export const SKILLS = {
                     value: 85
                 },
                 {
-                    name: 'MsSqlServer, Cosmos DB, Mongo DB',
+                    name: 'Ms Sql, Cosmos DB, Mongo DB',
                     value: 83
                 }
             ]
