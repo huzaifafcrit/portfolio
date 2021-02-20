@@ -5,12 +5,16 @@
     text-decoration: none;
 }
 
+.themeColor {
+    background-color: transparent !important;
+}
+
 .fa-bars:hover {
-    color: #006cb6;
+    color: #1a3263;
 }
 
 .nameStyle > span:focus, span:hover {
-    color: #006cb6;
+    color: #1a3263;
 }
 
 li {
@@ -18,11 +22,11 @@ li {
 }
 
 .navbar-light {
-    background-color: white;
+    /* background-color: white; */
+    background-color: transparent;
 }
 
 .navbar-light .nav-item > .nav-link {
-    color: rgba(0,0,0, 0.7);
     cursor: pointer;
 }
 
@@ -69,9 +73,26 @@ li {
 
 @media only screen and (max-width : 400px) {
     
+    .progress-container {
+        width: 100%;
+        background: #1a3263;
+        border: none;
+      }
+      
+      .progress-bar {
+        height: 4px;
+        background: #f94001;
+        width: 0%;
+      }
+
     .setPadding {
         padding-left: 0%;
         padding-right: 0%;
+    }
+
+    .scroll-in {
+        background-color: #1a3263 !important;
+        color: rgba(255,255,255, 0.9);
     }
 
     .bk {
@@ -83,14 +104,54 @@ li {
     }
 
     .navbar-light {
-        background-color: #006cb6 !important;
-        color: white;
+        background-color: rgba(255,255,255, 0.5);
+        color: rgba(255,255,255, 0.9);
+    }
+
+    .nameStyle {
+        color: #fff;
+    }
+
+    .nameStyle > span:focus, span:hover {
+        color: #fff;
     }
 
 }
 
 @media only screen and (max-width: 600px) {
     
+
+    .navbar-light {
+        background-color: rgba(255,255,255, 0.5);
+        color: rgba(255,255,255, 0.9);
+    }
+
+    .nameStyle {
+        color: #fff;
+    }
+
+    .scroll-in {
+        background-color: #1a3263 !important;
+        color: rgba(255,255,255, 0.9);
+    }
+
+    .progress-container {
+        width: 100%;
+        background: transparent;
+        border: none;
+      }
+
+    .nameStyle > span:focus, span:hover {
+        /* color: #fff; */
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+      
+      .progress-bar {
+        height: 4px;
+        background: #f94001;
+        width: 0%;
+      }
+
     .setPadding {
         padding-left: 0%;
         padding-right: 0%;
@@ -100,11 +161,6 @@ li {
         width: 75%;
     }
 
-    .navbar-light {
-        background-color: #006cb6 !important;
-        color: white;
-    }
-
 }
 
 @media only screen and (min-width: 700px) {
@@ -112,13 +168,43 @@ li {
         width: 40%;
     }
 
-    .navbar-light {
-        background-color: #006cb6 !important;
-        color: white;
+    .nameStyle {
+        color: inherit;
     }
 
-    .navbar-light .nav-item, .navbar-light .nav-item .nav-link   {
-        color: white;
+    .navbar-light {
+        background-color: rgba(255,255,255, 0.5);
+        color: rgba(255,255,255, 0.9);
+    }
+
+    .scroll-in {
+        background-color: #1a3263 !important;
+        color: rgba(255,255,255, 0.9);
+    }
+
+    .nameStyle > span:focus, span:hover {
+        /* color: #fff; */
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .progress-container {
+        width: 100%;
+        background: transparent;
+        border: none;
+      }
+      
+      .progress-bar {
+        height: 4px;
+        background: #f94001;
+        width: 0%;
+      }
+
+      .scroll-in .nameStyle {
+        color: #fff;
+    }
+
+    .scroll-in .nameStyle:hover {
+        color: #fff;
     }
 
 }
@@ -128,38 +214,76 @@ li {
         width: 40%;
     }
 
-    .navbar-light {
-        background-color: white !important;
-        color: rgba(0,0,0,0.7);
+    .nameStyle > span:focus, span:hover {
+        color: #1a3263 !important;
     }
 
-    .navbar-light .nav-item, .navbar-light .nav-item .nav-link   {
-        color: rgba(0,0,0, 0.7);
+    .navbar-light {
+        background-color: transparent;
+        color: rgba(255,255,255, 0.9);
     }
+
+    .scroll-in {
+        background-color: #fff !important;
+        color: rgba(0,0,0, 0.7) !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(255,255,255, 0.9);
+    }
+
+    .scroll-in .navbar-nav .nav-link {
+        color: #1a3263
+    }
+
+    /* .nav-item, .nav-item, .nav-link {
+        color: rgba(255,255,255, 0.9);
+    } */
 
     .nameStyle {
-        color: rgba(0,0,0,0.7);
+        color: rgba(255,255,255, 0.9);
     }
 
-    .nav-link.active {
-        color: #004b7c !important ;
-        border-bottom: 2px solid #006cb6;
+    .scroll-in .nameStyle {
+        color: rgba(0,0,0, 0.8);
     }
 
-    .nav-link:hover {
+    .scroll-in .nav-link.active {
+        color: #1a3263 !important ;
+        border-bottom: 2px solid #1a3263;
+    }
+
+    .scroll-in .nav-link:hover {
         color: #004b7c !important ;
     }
+
+    .progress-container {
+        width: 100%;
+        background: transparent;
+        border: none;
+      }
+      
+      .progress-bar {
+        height: 4px;
+        background: #1a3263;
+        width: 0%;
+      }
 
 }
 
-.progress-container {
-    width: 100%;
-    background: #fff;
-    border: none;
-  }
-  
-  .progress-bar {
-    height: 3px;
-    background: #006cb6;
-    width: 0%;
-  }
+
+.scroll-in {
+    background-color: #1a3263;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    color: #fff;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.scroll-out {
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    box-shadow: none;
+}
+

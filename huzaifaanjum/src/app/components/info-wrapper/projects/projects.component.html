@@ -1,14 +1,31 @@
 <h1 class="areaHeading py-5 mt-3">Projects</h1>
 <div class="row">
-    <div class="col-md-4" *ngFor="let project of projects | async">
-        <a class="card" (click)="showDetails(project.id)" >
-            <div class="card__content">
-                <p class="card__category">Project</p>
-                <h3 class="card__heading"> {{ project.title }} </h3>
-                <p>{{ project.shortDescription }} </p>
-                <img [src]="project.imgSrc" alt="portfolio" width="100%" height="auto" [class]="project.class">
-                <p class="pt-2" style="text-align: center;"> {{ project.year }} </p>
+    <div class="col-md-6 col-lg-4 mt-3" *ngFor="let project of projects | async">
+        <mat-card class="example-card px-3 py-4">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>
+                    <span class="txt-primary">
+                        {{ project.title }}
+                    </span>
+                </mat-card-title>
+                <mat-card-subtitle>
+                    <span class="txt-words" style="text-overflow: ellipsis;">
+                        {{ project.shortDescription }}
+                    </span>
+                </mat-card-subtitle>
+                <button mat-mini-fab (click)="showDetails(project.id)" class="bk-primary-orange ml-auto" aria-label="Read More">
+                    <mat-icon>read_more</mat-icon>
+                </button>
+            </mat-card-header>
+            <div class="p-2">
+                <img mat-card-image [src]="project.imgSrc" [alt]="project.title">
             </div>
-        </a>
+            <mat-card-content>
+                <p class="text-center">
+                    {{ project.year }}
+                </p>
+            </mat-card-content>
+        </mat-card>
     </div>
 </div>

@@ -1,5 +1,17 @@
+.mat-spinner-color::ng-deep circle{
+  stroke: #06224a !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: none; 
+}
+
 .grad1 {
-    color: #006cb6;
+    color: #06224a;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {

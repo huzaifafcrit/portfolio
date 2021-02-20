@@ -1,12 +1,12 @@
 <div class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light themeColor" id="navbar">
         <a class="navbar-brand">
-            <a (click)="toggleSideBar()" style="cursor: pointer;">
+            <span (click)="toggleSideBar()" style="cursor: pointer;">
                 <i class="fa fa-bars" aria-hidden="true"></i>
-            </a>
-            <a routerLink="huzaifaanjum" class="nameStyle">
+            </span>
+            <span style="outline-style: none; box-shadow: none; border-color: transparent;" routerLink="huzaifaanjum" onclick="window.scroll(0,0);" class="nameStyle">
                 <span>Huzaifa Anjum</span>
-            </a>
+            </span>
         </a>
         <button class="navbar-toggler" style="display: none;" type="button" data-toggle="collapse"
             data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
@@ -21,7 +21,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills" onclick="event.preventDefault();"
-                        (click)="scrollToSection('skills')">Technical Skills</a>
+                        (click)="scrollToSection('skills')">Technologies</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#experience" onclick="event.preventDefault();"
@@ -56,13 +56,17 @@
                     <mat-icon class="mail">mail</mat-icon>
                     <span>Contact Me</span>
                 </a>
-                <a mat-menu-item href="tel:+91 8879539141" style="text-decoration: none;">
+                <a mat-menu-item  *ngIf="loggedIn" href="tel:+91 8879539141" style="text-decoration: none;">
                     <mat-icon class="phone">local_phone</mat-icon>
                     <span>+91 88795 39141</span>
                 </a>
-                <a mat-menu-item routerLink="huzaifaanjum" style="text-decoration: none;">
+                <a mat-menu-item routerLink="huzaifaanjum" onclick="window.scroll(0,0);" style="text-decoration: none;">
                     <mat-icon class="code">code</mat-icon>
                     <span>Developer</span>
+                </a>
+                <a mat-menu-item *ngIf="loggedIn" (click)="downloadResume()" style="text-decoration: none;">
+                    <mat-icon class="code" style="color: forestgreen;">download</mat-icon>
+                    <span>Resume</span>
                 </a>
                 <a mat-menu-item *ngIf="!loggedIn" (click)="signIn()" style="text-decoration: none;">
                     <mat-icon class="user">account_circle</mat-icon>

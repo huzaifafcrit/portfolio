@@ -5,22 +5,24 @@
         <div class="card">
             <ngb-carousel #carousel [interval]="3000" class="card-shadow" style="border-radius: 3px;">
                 <ng-template ngbSlide *ngFor="let img of images | async">
-                        <img class="carousal-img" [src]="img.src" alt="{{ img.title }}" width="100%">
+                        <mat-spinner *ngIf="loading" class="mat-spinner-color"></mat-spinner>
+                        <img  style="max-height: 420px" height="auto" [hidden]="loading" (load)="onLoad()" class="carousal-img" [src]="img.src" alt="{{ img.title }}" width="100%">
                 </ng-template>
             </ngb-carousel>
         </div>
         <br>
     </div>
     <div class="col-md-4">
-        <div class="card" (click)="openImage(rightimg.src)">
-            <img class="carousal-img" [src]="rightimg.src" alt="{{ rightimg.title }}" width="100%" height="auto">
+        <div class="card">
+            <mat-spinner *ngIf="loadingtopSideImage" class="mat-spinner-color"></mat-spinner>
+            <img [hidden]="loadingtopSideImage" (load)="onLoadTopSideImage()" class="carousal-img" [src]="rightimg.src" alt="{{ rightimg.title }}" width="100%" height="auto">
         </div>
 
-        <div class="pt-5">
-            <h1 class="text-center pt-5 grad1"
-                style="font-size: xx-large; font-weight: 500; cursor: pointer; letter-spacing: 0.1rem; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;">
-                View All <i class="fas fa-angle-double-right" style="font-size: 35px;"></i>
-            </h1>
+        <div class="pt-3">
+            <div class="card p-1">
+                <mat-spinner *ngIf="loadingBottomSideImage" class="mat-spinner-color"></mat-spinner>
+                <img [hidden]="loadingBottomSideImage" (load)="onLoadBottomSideImage()" class="carousal-img" [src]="rightimgBottom.src" alt="{{ rightimgBottom.title }}" width="100%" height="auto">
+            </div>
         </div>
 
     </div>

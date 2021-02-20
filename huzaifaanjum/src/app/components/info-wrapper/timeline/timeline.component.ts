@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TimelineDetailsComponent } from '../templates/timeline-details/timeline-details.component';
+import { TimelineDetailsComponent } from './modal-wrapper/timeline-details/timeline-details.component';
 import {MatDialog} from '@angular/material/dialog';
 import { TIMELINE_DATA } from 'src/assets/json/user-info';
 @Component({

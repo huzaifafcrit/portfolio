@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
@@ -8,7 +8,11 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class TimelineDetailsComponent {
 
-  constructor(public dialogRef: MatDialogRef<TimelineDetailsComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
+  @HostListener('document:keydown.escape', ['$event']) onKeydownHandler(event: KeyboardEvent) {
+    this.closeDialog();
+  }
+
+  constructor( public dialogRef: MatDialogRef<TimelineDetailsComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   closeDialog(): void {
     this.dialogRef.close();

@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { of } from 'rxjs';
 import { CAROUSEL_IMAGES_DETAILS } from 'src/assets/json/user-info';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import { MatDialog } from '@angular/material/dialog';
-import { CertificateTemplateComponent } from '../templates/certificate-template/certificate-template.component';
 
 @Component({
   selector: 'app-certificates',
@@ -14,9 +12,13 @@ export class CertificatesComponent {
 
   imagesArray = CAROUSEL_IMAGES_DETAILS;
 
+  loading = true;
+  loadingtopSideImage = true;
+  loadingBottomSideImage = true;
+
   // tslint:disable-next-line: typedef
-  get images(){
-    return of(this.imagesArray);
+  get images() {
+    return of(this.imagesArray.sort((a, b) => a.id - b.id));
   }
 
   // tslint:disable-next-line: typedef
@@ -29,7 +31,12 @@ export class CertificatesComponent {
     return this.imagesArray.find(i => i.id === 5);
   }
 
-  constructor(config: NgbCarouselConfig, public dialog: MatDialog) {
+  // tslint:disable-next-line: typedef
+  get rightimgBottom() {
+    return this.imagesArray.find(i => i.id === 6);
+  }
+
+  constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.interval = 5000;
     config.keyboard = false;
@@ -37,11 +44,15 @@ export class CertificatesComponent {
     config.showNavigationArrows = false;
   }
 
-  openImage(imgSrc): void {
-    this.dialog.open(CertificateTemplateComponent, {
-      width: '100%',
-      height: '90%',
-      data: {imgSrc}
-    });
+  onLoad(): void {
+    this.loading = false;
+  }
+
+  onLoadTopSideImage(): void {
+    this.loadingtopSideImage = false;
+  }
+
+  onLoadBottomSideImage(): void {
+    this.loadingBottomSideImage = false;
   }
 }

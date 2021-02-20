@@ -1,7 +1,7 @@
 <div class="text-center">
     <div class="row">
-        <div class="col-md-12">
-            <img src="../../../assets/img/profile.webp" id="loseFocus" alt="Huzaifa Anjum" [height]="heightValue">
+        <div class="col-md-12 center">
+            <img [hidden]="loading" (load)="onLoad()" src="../../../assets/img/profile4.jpeg" id="loseFocus" alt="Huzaifa Anjum" [height]="heightValue">
         </div>
     </div>
     <div class="row" *ngIf="displayName">
@@ -11,19 +11,19 @@
     </div>
     <div class="row" [ngClass]="{'social-icons-container' : !displayName}">
         <div class="col-md-12 text-center">
-            <a class="social-icons" href="#">
+            <a class="social-icons" href="https://www.facebook.com/huzaifa.rock.75">
                 <i class="fa fa-facebook-f" style="color: #4267B2;"></i>
             </a>
-            <a class="social-icons" href="#">
+            <a class="social-icons" href="https://twitter.com/_huzaifaanjum_?s=03">
                 <i class="fa fa-twitter" style="color: #1DA1F2"></i>
             </a>
             <a class="social-icons" href="https://in.linkedin.com/in/huzaifa-anjum-90b117133?trk=public_profile_browsemap_mini-profile_title">
                 <i class="fa fa-linkedin" style="color: #0e76a8"></i>
             </a>
-            <a class="social-icons" href="#">
+            <a class="social-icons" href="https://www.instagram.com/huzaifaanjum/">
                 <i class="fa fa-instagram" id="insta"></i>
             </a>
-            <a class="social-icons" href="https://open.spotify.com/user/hfyhrwd4gyaut1lpozi6gwys4?si=rXjewfG6Q0ajO8lRfxrVpA">
+            <a class="social-icons" href="https://open.spotify.com/user/hfyhrwd4gyaut1lpozi6gwys4?si=AwsN2S3uTEeHWGsMDArZug">
                 <i class="fa fa-spotify" style="color: #1DB954;"></i>
             </a>
         </div>

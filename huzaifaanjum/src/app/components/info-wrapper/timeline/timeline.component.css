@@ -10,7 +10,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: #006cb6;
+    background-color: #1a3263;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -32,7 +32,7 @@
     height: 25px;
     right: -13px;
     background-color: white;
-    border: 4px solid #006cb6;
+    border: 4px solid #1a3263;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -42,6 +42,10 @@
   .left {
     left: 0;
     padding: 10px 40px 10px 0px;
+  }
+
+  .content-left:focus, .content-right:focus {
+    outline: none !important;
   }
   
   /* Place the timeline-container to the right */
@@ -143,6 +147,6 @@
   }
 
 .fas {
-  color: #006cb6;
+  color: #f94001;
   margin-right: 3px;
 }

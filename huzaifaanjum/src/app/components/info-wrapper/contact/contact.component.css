@@ -7,13 +7,14 @@
   
 .btn, .btn:focus, .btn:active, .btn:hover {
     outline: none;
-    box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: x-large;
+    /* box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   }
 
   .btn {
     width: 100%; 
     border-radius: 3px; 
-    background-color: #007bff;
+    background-color: #f94001;
     color: white;
   }
 
@@ -26,12 +27,7 @@
   }
 
   .beforeLogin {
-    background-color: #007bff;
     z-index: 100;
-  }
-
-  .beforeLogin > h1 {
-    color: #fff !important;
   }
 
   .afterLogin {
@@ -49,36 +45,39 @@
   }
 
   .post-container { 
-    border: 1px solid #007bff;
+    border: 1px solid #1a3263;
     border-radius: 50px;
     overflow: hidden;
-    background-color: #007bff;
+    background-color: #1a3263;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     font-family: Arial, Helvetica, sans-serif;
 }
 .post-thumb {
     float: left;
-    background-color: #007bff;
+    background-color: #1a3263;
 }
 .post-thumb img {
     display: block;
-    background-color: #007bff;
+    background-color: #1a3263;
 }
 .post-content {
   margin-top: 15px;
   margin-left: 90px;
-  background-color: #007bff;
+  background-color: #1a3263;
 }
 .post-title {
     font-weight: bold;
     font-size: 100%;
-    background-color: #007bff;
+    background-color: #1a3263;
 }
 
 .contactCardPadding {
   padding: 13%;
 }
 
+.top-p {
+  padding-top: 50px !important;
+}
 
 @media only screen and (max-width : 400px) {
     
@@ -108,7 +107,7 @@
 @media only screen and (max-width: 1200px) {
   
   .contactCardPadding {
-    padding: 10%;
+    padding: 5%;
   }
 
 }

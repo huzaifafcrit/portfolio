@@ -1,3 +1,15 @@
+.mat-spinner-color::ng-deep circle{
+    stroke: #06224a !important;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: none; 
+  }
+
 .social-icons-container {
     margin-top: 54px;
     margin-bottom: 10px;
