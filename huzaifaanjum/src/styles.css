@@ -35,7 +35,7 @@ html {
 }
 
 .txt-primary-orange {
-    color: #d41b0b;
+    color: #f94001;
     letter-spacing: 0.03rem;
     font-weight: 450;
 }
@@ -46,7 +46,7 @@ html {
 }
 
 .bk-primary-orange {
-    background-color: #d11e0e !important;
+    background-color: #f94001 !important;
     color: #fff;
 }
 
