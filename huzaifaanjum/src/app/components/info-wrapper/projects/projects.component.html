@@ -1,7 +1,7 @@
 <h1 class="areaHeading py-5 mt-3">Projects</h1>
 <div class="row">
     <div class="col-md-6 col-lg-4 mt-3" *ngFor="let project of projects | async">
-        <mat-card class="example-card px-2 py-3">
+        <mat-card class="example-card p-3">
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
                 <mat-card-title>
@@ -18,7 +18,7 @@
                     <mat-icon>read_more</mat-icon>
                 </button>
             </mat-card-header>
-            <div class="p-3">
+            <div class="p-2">
                 <img mat-card-image [src]="project.imgSrc" [alt]="project.title">
             </div>
             <mat-card-content>
