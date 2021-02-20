@@ -14,7 +14,6 @@
 .areaHeading {
     /* text-align: center; */
     color: rgba(0, 0, 0, 0.8);
-    padding-top: 5px;
 }
 
 html, body { height: 100%; scroll-behavior: smooth; }
