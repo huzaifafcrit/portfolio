@@ -3,7 +3,7 @@
     <div *ngFor="let item of timelineData; index as idx">
         <div class="timeline-container" [ngClass]="{'left': idx%2 === 0, 'right': idx%2 !== 0}">
             <div [ngClass]="{'content-left': idx%2 === 0, 'content-right': idx%2 !== 0}" (click)="displayDetails(item)">
-                <h2> {{ item.duration }} </h2>
+                <h2 class="txt-primary"> {{ item.duration }} </h2>
                 <p class="txt-words"> {{ item.title }} </p>
                 <div class="row pt-2" *ngIf="item.footer">
                     <div class="col-md-12 col-lg-6 col-xl-6">
@@ -11,7 +11,7 @@
                         <span class="txt-words">
                             {{item.footer.lname}}
                         </span>
-                        <span class="txt-primary">
+                        <span class="txt-primary-orange">
                             {{item.footer.lvalue}}
                         </span>
                     </div>
@@ -20,7 +20,7 @@
                         <span class="txt-words">
                             {{item.footer.rname}}
                         </span>
-                        <span class="txt-primary">
+                        <span class="txt-primary-orange">
                             {{item.footer.rvalue}}
                         </span>
                     </div>

@@ -10,11 +10,11 @@
 }
 
 .fa-bars:hover {
-    color: #06224a;
+    color: #1a3263;
 }
 
 .nameStyle > span:focus, span:hover {
-    color: #06224a;
+    color: #1a3263;
 }
 
 li {
@@ -75,13 +75,13 @@ li {
     
     .progress-container {
         width: 100%;
-        background: #06224a;
+        background: #1a3263;
         border: none;
       }
       
       .progress-bar {
         height: 4px;
-        background: #ffb400;
+        background: #ec2a19;
         width: 0%;
       }
 
@@ -91,7 +91,7 @@ li {
     }
 
     .scroll {
-        background-color: #06224a !important;
+        background-color: #1a3263 !important;
         color: rgba(255,255,255, 0.9);
     }
 
@@ -131,7 +131,7 @@ li {
     }
 
     .scroll {
-        background-color: #06224a !important;
+        background-color: #1a3263 !important;
         color: rgba(255,255,255, 0.9);
     }
 
@@ -148,7 +148,7 @@ li {
       
       .progress-bar {
         height: 4px;
-        background: #ffb400;
+        background: #ec2a19;
         width: 0%;
       }
 
@@ -178,7 +178,7 @@ li {
     }
 
     .scroll {
-        background-color: #06224a !important;
+        background-color: #1a3263 !important;
         color: rgba(255,255,255, 0.9);
     }
 
@@ -195,7 +195,7 @@ li {
       
       .progress-bar {
         height: 4px;
-        background: #ffb400;
+        background: #ec2a19;
         width: 0%;
       }
 
@@ -215,7 +215,7 @@ li {
     }
 
     .nameStyle > span:focus, span:hover {
-        color: #06224a !important;
+        color: #1a3263 !important;
     }
 
     .navbar-light {
@@ -233,7 +233,7 @@ li {
     }
 
     .scroll .navbar-nav .nav-link {
-        color: #06224a
+        color: #1a3263
     }
 
     /* .nav-item, .nav-item, .nav-link {
@@ -249,8 +249,8 @@ li {
     }
 
     .scroll .nav-link.active {
-        color: #06224a !important ;
-        border-bottom: 2px solid #06224a;
+        color: #1a3263 !important ;
+        border-bottom: 2px solid #1a3263;
     }
 
     .scroll .nav-link:hover {
@@ -265,7 +265,7 @@ li {
       
       .progress-bar {
         height: 4px;
-        background: #06224a;
+        background: #1a3263;
         width: 0%;
       }
 
@@ -273,7 +273,7 @@ li {
 
 
 .scroll {
-    background-color: #06224a;
+    background-color: #1a3263;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
     color: #fff;

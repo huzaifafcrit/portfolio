@@ -14,7 +14,7 @@
   .btn {
     width: 100%; 
     border-radius: 3px; 
-    background-color: #007bff;
+    background-color: #d41b0b;
     color: white;
   }
 
@@ -27,18 +27,7 @@
   }
 
   .beforeLogin {
-    /* background-image: url('../../../../assets/img/handshake.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    background-position: center; */
     z-index: 100;
-  }
-
-  .googleBtn {
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: xx-large;
   }
 
   .afterLogin {
@@ -56,30 +45,30 @@
   }
 
   .post-container { 
-    border: 1px solid #007bff;
+    border: 1px solid #1a3263;
     border-radius: 50px;
     overflow: hidden;
-    background-color: #007bff;
+    background-color: #1a3263;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     font-family: Arial, Helvetica, sans-serif;
 }
 .post-thumb {
     float: left;
-    background-color: #007bff;
+    background-color: #1a3263;
 }
 .post-thumb img {
     display: block;
-    background-color: #007bff;
+    background-color: #1a3263;
 }
 .post-content {
   margin-top: 15px;
   margin-left: 90px;
-  background-color: #007bff;
+  background-color: #1a3263;
 }
 .post-title {
     font-weight: bold;
     font-size: 100%;
-    background-color: #007bff;
+    background-color: #1a3263;
 }
 
 .contactCardPadding {
@@ -88,16 +77,6 @@
 
 .top-p {
   padding-top: 50px !important;
-}
-
-.contact-text{
-  background:linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 500;
-  font-size: x-large; 
-  font-family: cursive;
-  letter-spacing: 0.02rem;
 }
 
 @media only screen and (max-width : 400px) {

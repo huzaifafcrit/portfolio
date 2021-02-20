@@ -15,6 +15,9 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
 
 import { ToastrModule } from 'ngx-toastr';
 
@@ -33,7 +36,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ProjectsComponent } from './components/info-wrapper/projects/projects.component';
 import { CertificatesComponent } from './components/info-wrapper/certificates/certificates.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CertificateTemplateComponent } from './components/info-wrapper/templates/certificate-template/certificate-template.component';
 import { ProjectDetailsTemplateComponent } from './components/info-wrapper/templates/project-details-template/project-details-template.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -59,7 +61,6 @@ import { AngularFireModule } from '@angular/fire';
     TimelineDetailsComponent,
     ProjectsComponent,
     CertificatesComponent,
-    CertificateTemplateComponent,
     ProjectDetailsTemplateComponent,
     SkillsComponent
   ],
@@ -73,9 +74,11 @@ import { AngularFireModule } from '@angular/fire';
     MatChipsModule,
     MatToolbarModule,
     MatDialogModule,
+    MatButtonModule,
     MatFormFieldModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
+    MatCardModule,
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,

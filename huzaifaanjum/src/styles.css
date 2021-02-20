@@ -29,16 +29,37 @@ html {
 }
 
 .txt-primary {
-    color: #006cb6;
+    color: #1a3263;
     letter-spacing: 0.03rem;
     font-weight: 450;
 }
 
+.txt-primary-orange {
+    color: #d41b0b;
+    letter-spacing: 0.03rem;
+    font-weight: 450;
+}
+
+.bk-primary {
+    background-color: #1a3263 !important;
+    color: #fff;
+}
+
+.bk-primary-orange {
+    background-color: #d11e0e !important;
+    color: #fff;
+}
+
+
 .txt-words {
-    letter-spacing: 0.019rem;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.013rem;
+    font-weight: 500;
 }
 
 .mat-drawer-container {
     background-color: #fff !important;
     color: rgba(0,0,0,.87);
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
