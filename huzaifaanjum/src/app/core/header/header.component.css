@@ -90,7 +90,7 @@ li {
         padding-right: 0%;
     }
 
-    .scroll {
+    .scroll-in {
         background-color: #1a3263 !important;
         color: rgba(255,255,255, 0.9);
     }
@@ -130,7 +130,7 @@ li {
         color: #fff;
     }
 
-    .scroll {
+    .scroll-in {
         background-color: #1a3263 !important;
         color: rgba(255,255,255, 0.9);
     }
@@ -177,7 +177,7 @@ li {
         color: rgba(255,255,255, 0.9);
     }
 
-    .scroll {
+    .scroll-in {
         background-color: #1a3263 !important;
         color: rgba(255,255,255, 0.9);
     }
@@ -199,11 +199,11 @@ li {
         width: 0%;
       }
 
-      .scroll .nameStyle {
+      .scroll-in .nameStyle {
         color: #fff;
     }
 
-    .scroll .nameStyle:hover {
+    .scroll-in .nameStyle:hover {
         color: #fff;
     }
 
@@ -223,7 +223,7 @@ li {
         color: rgba(255,255,255, 0.9);
     }
 
-    .scroll {
+    .scroll-in {
         background-color: #fff !important;
         color: rgba(0,0,0, 0.7) !important;
     }
@@ -232,7 +232,7 @@ li {
         color: rgba(255,255,255, 0.9);
     }
 
-    .scroll .navbar-nav .nav-link {
+    .scroll-in .navbar-nav .nav-link {
         color: #1a3263
     }
 
@@ -244,16 +244,16 @@ li {
         color: rgba(255,255,255, 0.9);
     }
 
-    .scroll .nameStyle {
+    .scroll-in .nameStyle {
         color: rgba(0,0,0, 0.8);
     }
 
-    .scroll .nav-link.active {
+    .scroll-in .nav-link.active {
         color: #1a3263 !important ;
         border-bottom: 2px solid #1a3263;
     }
 
-    .scroll .nav-link:hover {
+    .scroll-in .nav-link:hover {
         color: #004b7c !important ;
     }
 
@@ -272,9 +272,18 @@ li {
 }
 
 
-.scroll {
+.scroll-in {
     background-color: #1a3263;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
     color: #fff;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
 }
+
+.scroll-out {
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    box-shadow: none;
+}
+

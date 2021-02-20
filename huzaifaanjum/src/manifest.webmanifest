@@ -1,7 +1,7 @@
 {
   "name": "huzaifaanjum",
   "short_name": "huzaifaanjum",
-  "theme_color": "#1976d2",
+  "theme_color": "#1a3263",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",

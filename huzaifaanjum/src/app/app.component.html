@@ -20,16 +20,20 @@
           <app-project-details-template></app-project-details-template>
         </mat-sidenav>
         <mat-sidenav-content>
-          <header>
-            <app-header></app-header>
-            <a (click)="sidenav.toggle()" id="sideBarToggle" style="opacity: 0;"></a>
-          </header>
-          <div class="bk" id="about"></div>
-          <div class="topSpace"></div>
-          <router-outlet></router-outlet>
-          <button mat-button (click)="left.toggle()" id="rightSideBar"
-            style="width: 0; height: 0; opacity: 0;">left</button>
-          <app-footer></app-footer>
+          <div (scroll)="onScroll($event)"
+            style="max-height: 105vh; scroll-behavior: smooth; position: relative; overflow-y: scroll;"
+            id="content-container" data-spy="scroll" data-target="#navbar" data-offset="0">
+            <header>
+              <app-header></app-header>
+              <a (click)="sidenav.toggle()" id="sideBarToggle" style="opacity: 0;"></a>
+            </header>
+            <div class="bk" id="about"></div>
+            <div class="topSpace"></div>
+            <router-outlet></router-outlet>
+            <button mat-button (click)="left.toggle()" id="rightSideBar"
+              style="width: 0; height: 0; opacity: 0;">left</button>
+            <app-footer></app-footer>
+          </div>
         </mat-sidenav-content>
       </mat-sidenav-container>
     </mat-sidenav-content>

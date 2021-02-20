@@ -31,7 +31,7 @@ import { TechnicalSkillsComponent } from './components/info-wrapper/technical-sk
 import { AboutMeComponent } from './components/info-wrapper/about-me/about-me.component';
 import { UserInfoComponent } from './components/info-wrapper/user-info/user-info.component';
 import { TimelineComponent } from './components/info-wrapper/timeline/timeline.component';
-import { TimelineDetailsComponent } from './components/info-wrapper/templates/timeline-details/timeline-details.component';
+import { TimelineDetailsComponent } from './components/info-wrapper/timeline/modal-wrapper/timeline-details/timeline-details.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProjectsComponent } from './components/info-wrapper/projects/projects.component';
 import { CertificatesComponent } from './components/info-wrapper/certificates/certificates.component';
@@ -43,7 +43,7 @@ import { SkillsComponent } from './components/info-wrapper/about-me/skills/skill
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
-
+import { ModalWrapperComponent } from './components/info-wrapper/timeline/modal-wrapper/modal-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +62,8 @@ import { AngularFireModule } from '@angular/fire';
     ProjectsComponent,
     CertificatesComponent,
     ProjectDetailsTemplateComponent,
-    SkillsComponent
+    SkillsComponent,
+    ModalWrapperComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfigPortfolio),

@@ -24,23 +24,7 @@ export class HeaderComponent {
   showNavItems: boolean;
   loggedIn = false;
 
-  @HostListener('window:scroll')
-  public scrollIndicator(): void {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById('scrollBar').style.width = scrolled + '%';
-
-    const scrollPoint = 100;
-    const nav = document.getElementById('navbar');
-    if (window.pageYOffset > scrollPoint) {
-      nav.classList.add("scroll");
-    } else if (window.pageYOffset <= scrollPoint) {
-      nav.classList.remove("scroll");
-    }
-
-  }
-
+  
   scrollToSection(section): void{
     const element = document.getElementById(section);
     element.scrollIntoView();

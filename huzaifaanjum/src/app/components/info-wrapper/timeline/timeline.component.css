@@ -43,6 +43,10 @@
     left: 0;
     padding: 10px 40px 10px 0px;
   }
+
+  .content-left:focus, .content-right:focus {
+    outline: none !important;
+  }
   
   /* Place the timeline-container to the right */
   .right {
