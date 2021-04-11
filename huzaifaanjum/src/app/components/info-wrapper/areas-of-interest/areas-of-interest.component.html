@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-md-12">
-        <h1 class="areaHeading py-5 mt-3">Interests</h1>
+        <h1 class="areaHeading pt-5 pb-2 mt-5">Interests</h1>
         <div class="row mt-4">
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 pl-3 pr-3" *ngFor="let interest of userInterests.value">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 pl-3 pr-3"
+                *ngFor="let interest of userInterests.value">
                 <div class="text-center cardOnHover p-3 mb-3">
                     <i class="material-icons iconSize" [style.color]="interest.color">{{ interest.icon }}</i>
                     <br>
