@@ -1,4 +1,13 @@
-  /* The actual timeline (the vertical ruler) */
+.read-more {
+  cursor: pointer;
+  color: #f94001 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
     max-width: 1200px;

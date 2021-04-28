@@ -34,9 +34,12 @@ h4 {
     letter-spacing: 0.02rem;
 }
 
-h4.userData {
-    color: rgba(0, 0, 0, 0.7);
-    letter-spacing: 0.02rem;
+.subheading {
+    color: #3a3b3c;
+}
+
+.userData {
+    color: #000;
 }
   
 @media only screen and (max-width: 600px) {
