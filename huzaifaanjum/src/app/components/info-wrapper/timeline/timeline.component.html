@@ -2,10 +2,10 @@
 <div class="timeline">
     <div *ngFor="let item of timelineData; index as idx">
         <div class="timeline-container" [ngClass]="{'left': idx%2 === 0, 'right': idx%2 !== 0}">
-            <div [ngClass]="{'content-left': idx%2 === 0, 'content-right': idx%2 !== 0}"
-                [routerLink]="[{ outlets: { modal: ['experiences', item.id] }}]">
+            <div [ngClass]="{'content-left': idx%2 === 0, 'content-right': idx%2 !== 0}">
                 <h2 class="txt-primary"> {{ item.duration }} </h2>
                 <p class="txt-words"> {{ item.title }} </p>
+                <a class="read-more" [routerLink]="[{ outlets: { modal: ['experiences', item.id] }}]"> Read more... </a>
                 <div class="row pt-2" *ngIf="item.footer">
                     <div class="col-md-12 col-lg-6 col-xl-6">
                         <i class="fas" [ngClass]="item.footer.licon"></i>
